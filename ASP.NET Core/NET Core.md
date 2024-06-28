@@ -136,16 +136,16 @@ Esta evolución muestra cómo .NET pasó de ser una respuesta a Java y una plata
 
 
 
-> .[!NOTE].
+> [!NOTE]
 > Esto es una NOTE
 
-> .[!TIP]
+> [!TIP]
 > Esto es una TIP
 
-> [!IMPORTANT].
+> [!IMPORTANT]
 > Esto es una IMPORTANT
 
-> [!WARNIG]
+> [!WARNING]
 > Esto es una WARNING
 
 > [!CAUTION]
