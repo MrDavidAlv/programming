@@ -1,0 +1,3039 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9543395d03fb619b3d05f2f4242bffb1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+<div style="position: fixed; 
+            top: 10px; left: 50px; width: 320px; 
+            background-color: white; padding: 12px;
+            border: 2px solid #333; border-radius: 8px;
+            z-index: 9999; font-family: Arial;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.3);">
+    <h3 style="margin: 0; color: #333;">EcoBalance360 - Santander 2019</h3>
+    <p style="margin: 5px 0 0 0; font-size: 12px; color: #666;">Balance de Carbono Municipal (ton CO₂eq)</p>
+    <div style="margin-top: 8px; font-size: 11px;">
+        <span style="color: #1a9850;">●</span> Sumidero (captura > emisiones)<br>
+        <span style="color: #d73027;">●</span> Emisor (emisiones > captura)
+    </div>
+</div>
+    
+            <div class="folium-map" id="map_9543395d03fb619b3d05f2f4242bffb1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9543395d03fb619b3d05f2f4242bffb1 = L.map(
+                "map_9543395d03fb619b3d05f2f4242bffb1",
+                {
+                    center: [6.65, -73.15],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fc53f3f0a17a0c05a62d2ceeb68f173f = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fc53f3f0a17a0c05a62d2ceeb68f173f.addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+            var circle_marker_09e72a530ac48410c9d0c96731313c44 = L.circleMarker(
+                [6.25, -73.5167],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#abdb6fff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_6c84c10a4158c2abae6463612d24dc36 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7c41de3e869460ecfa77415d2e3924e1 = $(`<div id="html_7c41de3e869460ecfa77415d2e3924e1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">AGUADA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -14,353 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 2,563 ton<br>             <b>Captura:</b> 16,916 ton<br>             <b>IEC:</b> 50.5         </div>         </div>`)[0];
+                popup_6c84c10a4158c2abae6463612d24dc36.setContent(html_7c41de3e869460ecfa77415d2e3924e1);
+            
+        
+
+        circle_marker_09e72a530ac48410c9d0c96731313c44.bindPopup(popup_6c84c10a4158c2abae6463612d24dc36)
+        ;
+
+        
+    
+    
+            circle_marker_09e72a530ac48410c9d0c96731313c44.bindTooltip(
+                `<div>
+                     AGUADA: -14,353 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9efa2701a078830a5458a4cfa8832975 = L.circleMarker(
+                [6.4333, -73.3167],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9bd466ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_7a66d8757c7d035dbc087e31bbd364e1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_61e62315f4b0d11bc5d4ea238c276714 = $(`<div id="html_61e62315f4b0d11bc5d4ea238c276714" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">ALBANIA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -41,100 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 13,743 ton<br>             <b>Captura:</b> 54,843 ton<br>             <b>IEC:</b> 43.1         </div>         </div>`)[0];
+                popup_7a66d8757c7d035dbc087e31bbd364e1.setContent(html_61e62315f4b0d11bc5d4ea238c276714);
+            
+        
+
+        circle_marker_9efa2701a078830a5458a4cfa8832975.bindPopup(popup_7a66d8757c7d035dbc087e31bbd364e1)
+        ;
+
+        
+    
+    
+            circle_marker_9efa2701a078830a5458a4cfa8832975.bindTooltip(
+                `<div>
+                     ALBANIA: -41,100 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34c62e58465fe3e1a911e8131ba19846 = L.circleMarker(
+                [6.6917, -73.0167],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffbb8ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.551305324475832, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_790256d7156ac9dbef8daa756fcf71c8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9491c7099e60707616990bc33ec00d00 = $(`<div id="html_9491c7099e60707616990bc33ec00d00" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">ARATOCA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 203,270 ton CO₂eq<br>             <b>Clasificación:</b> Emisor<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 236,941 ton<br>             <b>Captura:</b> 33,672 ton<br>             <b>IEC:</b> 92.2         </div>         </div>`)[0];
+                popup_790256d7156ac9dbef8daa756fcf71c8.setContent(html_9491c7099e60707616990bc33ec00d00);
+            
+        
+
+        circle_marker_34c62e58465fe3e1a911e8131ba19846.bindPopup(popup_790256d7156ac9dbef8daa756fcf71c8)
+        ;
+
+        
+    
+    
+            circle_marker_34c62e58465fe3e1a911e8131ba19846.bindTooltip(
+                `<div>
+                     ARATOCA: 203,270 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5c7522025ffd7fc6adc930d1fbdb25a3 = L.circleMarker(
+                [5.9333, -73.6167],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b5df75ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_9a5ebf10b7b5d901354480a7877ce3c7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c765726fc9423405a32abe2b7f73cae7 = $(`<div id="html_c765726fc9423405a32abe2b7f73cae7" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">BARBOSA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 2,891 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 11,473 ton<br>             <b>Captura:</b> 8,582 ton<br>             <b>IEC:</b> 55.3         </div>         </div>`)[0];
+                popup_9a5ebf10b7b5d901354480a7877ce3c7.setContent(html_c765726fc9423405a32abe2b7f73cae7);
+            
+        
+
+        circle_marker_5c7522025ffd7fc6adc930d1fbdb25a3.bindPopup(popup_9a5ebf10b7b5d901354480a7877ce3c7)
+        ;
+
+        
+    
+    
+            circle_marker_5c7522025ffd7fc6adc930d1fbdb25a3.bindTooltip(
+                `<div>
+                     BARBOSA: 2,891 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d64b05d597d991ea72588164ac203b7b = L.circleMarker(
+                [6.6333, -73.2167],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b0dd72ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_02826c8e4c9cf13846ad56a368ea8c3a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0fa7b6ddafbd0620c46e1a044b7e866d = $(`<div id="html_0fa7b6ddafbd0620c46e1a044b7e866d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">BARICHARA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -5,394 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 18,519 ton<br>             <b>Captura:</b> 23,912 ton<br>             <b>IEC:</b> 53.0         </div>         </div>`)[0];
+                popup_02826c8e4c9cf13846ad56a368ea8c3a.setContent(html_0fa7b6ddafbd0620c46e1a044b7e866d);
+            
+        
+
+        circle_marker_d64b05d597d991ea72588164ac203b7b.bindPopup(popup_02826c8e4c9cf13846ad56a368ea8c3a)
+        ;
+
+        
+    
+    
+            circle_marker_d64b05d597d991ea72588164ac203b7b.bindTooltip(
+                `<div>
+                     BARICHARA: -5,394 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f2cd10eb90bf4787d84f57595281f01e = L.circleMarker(
+                [7.0653, -73.8547],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_e498ba22357df143ebe944c891d13cc9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e5499ee99ccde63253595f75b06dbeb1 = $(`<div id="html_e5499ee99ccde63253595f75b06dbeb1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">BARRANCABERMEJA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 551,918 ton CO₂eq<br>             <b>Clasificación:</b> Emisor<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 791,616 ton<br>             <b>Captura:</b> 239,698 ton<br>             <b>IEC:</b> 99.8         </div>         </div>`)[0];
+                popup_e498ba22357df143ebe944c891d13cc9.setContent(html_e5499ee99ccde63253595f75b06dbeb1);
+            
+        
+
+        circle_marker_f2cd10eb90bf4787d84f57595281f01e.bindPopup(popup_e498ba22357df143ebe944c891d13cc9)
+        ;
+
+        
+    
+    
+            circle_marker_f2cd10eb90bf4787d84f57595281f01e.bindTooltip(
+                `<div>
+                     BARRANCABERMEJA: 551,918 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2eb49a4aba53314807dc0dc9e3bc4b4 = L.circleMarker(
+                [7.0833, -73.2833],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a8d96dff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_06b7f13a59371f6f90e58119fd341659 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1f330b77ebee6344cf9848c0ed8ab4d1 = $(`<div id="html_1f330b77ebee6344cf9848c0ed8ab4d1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">BETULIA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -19,251 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 110,195 ton<br>             <b>Captura:</b> 129,447 ton<br>             <b>IEC:</b> 49.1         </div>         </div>`)[0];
+                popup_06b7f13a59371f6f90e58119fd341659.setContent(html_1f330b77ebee6344cf9848c0ed8ab4d1);
+            
+        
+
+        circle_marker_c2eb49a4aba53314807dc0dc9e3bc4b4.bindPopup(popup_06b7f13a59371f6f90e58119fd341659)
+        ;
+
+        
+    
+    
+            circle_marker_c2eb49a4aba53314807dc0dc9e3bc4b4.bindTooltip(
+                `<div>
+                     BETULIA: -19,251 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_858610c72c89603bac2ddc63496676ec = L.circleMarker(
+                [6.0, -73.3],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff2a9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.917856420310986, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_9f676139ad40979c64092d3c389e0495 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_771ca7b297bd63044dd58531b86a549c = $(`<div id="html_771ca7b297bd63044dd58531b86a549c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">BOLIVAR</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 238,768 ton CO₂eq<br>             <b>Clasificación:</b> Emisor<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 368,215 ton<br>             <b>Captura:</b> 129,447 ton<br>             <b>IEC:</b> 94.6         </div>         </div>`)[0];
+                popup_9f676139ad40979c64092d3c389e0495.setContent(html_771ca7b297bd63044dd58531b86a549c);
+            
+        
+
+        circle_marker_858610c72c89603bac2ddc63496676ec.bindPopup(popup_9f676139ad40979c64092d3c389e0495)
+        ;
+
+        
+    
+    
+            circle_marker_858610c72c89603bac2ddc63496676ec.bindTooltip(
+                `<div>
+                     BOLIVAR: 238,768 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a7f34e716c0451361a00db8001212df = L.circleMarker(
+                [7.1254, -73.1198],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eef8a7ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.598213845766773, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_a9049a2e6f4846a200bf91dd0fb82b90 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_604e8f022a6b54995fa58fcee52e1ad6 = $(`<div id="html_604e8f022a6b54995fa58fcee52e1ad6" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">BUCARAMANGA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 128,973 ton CO₂eq<br>             <b>Clasificación:</b> Emisor<br>             <b>Perfil:</b> Urbano-Industrial<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 169,370 ton<br>             <b>Captura:</b> 40,396 ton<br>             <b>IEC:</b> 83.6         </div>         </div>`)[0];
+                popup_a9049a2e6f4846a200bf91dd0fb82b90.setContent(html_604e8f022a6b54995fa58fcee52e1ad6);
+            
+        
+
+        circle_marker_2a7f34e716c0451361a00db8001212df.bindPopup(popup_a9049a2e6f4846a200bf91dd0fb82b90)
+        ;
+
+        
+    
+    
+            circle_marker_2a7f34e716c0451361a00db8001212df.bindTooltip(
+                `<div>
+                     BUCARAMANGA: 128,973 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_29c09a03cacc25fee87d85067e599302 = L.circleMarker(
+                [6.5833, -73.2],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b4df75ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_ff7c62e5981ce73c253117929ff77285 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6d5c5fe36c93f29ac1d90ecce6c36df5 = $(`<div id="html_6d5c5fe36c93f29ac1d90ecce6c36df5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">CABRERA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 1,398 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 17,125 ton<br>             <b>Captura:</b> 15,727 ton<br>             <b>IEC:</b> 54.9         </div>         </div>`)[0];
+                popup_ff7c62e5981ce73c253117929ff77285.setContent(html_6d5c5fe36c93f29ac1d90ecce6c36df5);
+            
+        
+
+        circle_marker_29c09a03cacc25fee87d85067e599302.bindPopup(popup_ff7c62e5981ce73c253117929ff77285)
+        ;
+
+        
+    
+    
+            circle_marker_29c09a03cacc25fee87d85067e599302.bindTooltip(
+                `<div>
+                     CABRERA: 1,398 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e2aa116aa7fec8e30759758824820523 = L.circleMarker(
+                [7.35, -72.9667],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#abdb70ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_a48d97a1a7f1d4ec768ce2671f7eee8c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_208a5799c0613d3126401408d0f3fce2 = $(`<div id="html_208a5799c0613d3126401408d0f3fce2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">CALIFORNIA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -12,940 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 2,538 ton<br>             <b>Captura:</b> 15,478 ton<br>             <b>IEC:</b> 50.9         </div>         </div>`)[0];
+                popup_a48d97a1a7f1d4ec768ce2671f7eee8c.setContent(html_208a5799c0613d3126401408d0f3fce2);
+            
+        
+
+        circle_marker_e2aa116aa7fec8e30759758824820523.bindPopup(popup_a48d97a1a7f1d4ec768ce2671f7eee8c)
+        ;
+
+        
+    
+    
+            circle_marker_e2aa116aa7fec8e30759758824820523.bindTooltip(
+                `<div>
+                     CALIFORNIA: -12,940 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_40a98558801e4eb7c6a1d26a545dcaf5 = L.circleMarker(
+                [6.5167, -72.6833],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#addc71ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_8ea455b5bc9562c332fa5c724925b39d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_71020ec074d2fef2da65543b32fcf750 = $(`<div id="html_71020ec074d2fef2da65543b32fcf750" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">CAPITANEJO</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -9,627 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 7,164 ton<br>             <b>Captura:</b> 16,791 ton<br>             <b>IEC:</b> 51.8         </div>         </div>`)[0];
+                popup_8ea455b5bc9562c332fa5c724925b39d.setContent(html_71020ec074d2fef2da65543b32fcf750);
+            
+        
+
+        circle_marker_40a98558801e4eb7c6a1d26a545dcaf5.bindPopup(popup_8ea455b5bc9562c332fa5c724925b39d)
+        ;
+
+        
+    
+    
+            circle_marker_40a98558801e4eb7c6a1d26a545dcaf5.bindTooltip(
+                `<div>
+                     CAPITANEJO: -9,627 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3b0189ca6194331130b8015840cce0bb = L.circleMarker(
+                [6.6167, -72.6167],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a1d669ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_47139cc75ceae12f6ffd50bf1f99f869 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_eac24fb282d26251911668660c75f002 = $(`<div id="html_eac24fb282d26251911668660c75f002" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">CARCASI</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -30,273 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 21,442 ton<br>             <b>Captura:</b> 51,715 ton<br>             <b>IEC:</b> 46.1         </div>         </div>`)[0];
+                popup_47139cc75ceae12f6ffd50bf1f99f869.setContent(html_eac24fb282d26251911668660c75f002);
+            
+        
+
+        circle_marker_3b0189ca6194331130b8015840cce0bb.bindPopup(popup_47139cc75ceae12f6ffd50bf1f99f869)
+        ;
+
+        
+    
+    
+            circle_marker_3b0189ca6194331130b8015840cce0bb.bindTooltip(
+                `<div>
+                     CARCASI: -30,273 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4fa783b6bc2de975a89cac42141d940f = L.circleMarker(
+                [6.7333, -72.9],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#acdb70ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_dbcbeee4e0c5dbd9a5d7d8593b0cb7c5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_01f0fe690f8c848f1e908ee87e6eae06 = $(`<div id="html_01f0fe690f8c848f1e908ee87e6eae06" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">CEPITA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -11,372 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 7,844 ton<br>             <b>Captura:</b> 19,217 ton<br>             <b>IEC:</b> 51.4         </div>         </div>`)[0];
+                popup_dbcbeee4e0c5dbd9a5d7d8593b0cb7c5.setContent(html_01f0fe690f8c848f1e908ee87e6eae06);
+            
+        
+
+        circle_marker_4fa783b6bc2de975a89cac42141d940f.bindPopup(popup_dbcbeee4e0c5dbd9a5d7d8593b0cb7c5)
+        ;
+
+        
+    
+    
+            circle_marker_4fa783b6bc2de975a89cac42141d940f.bindTooltip(
+                `<div>
+                     CEPITA: -11,372 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe7ad7bccc676c83a68c4a7766d8aeb8 = L.circleMarker(
+                [6.3667, -72.6667],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#afdd72ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_d4f6099ac65cb3a027efeb0cd893e169 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9c3342fcb091cd94cafbc1f91bcd66ca = $(`<div id="html_9c3342fcb091cd94cafbc1f91bcd66ca" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">CERRITO</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -6,639 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 23,320 ton<br>             <b>Captura:</b> 29,959 ton<br>             <b>IEC:</b> 52.7         </div>         </div>`)[0];
+                popup_d4f6099ac65cb3a027efeb0cd893e169.setContent(html_9c3342fcb091cd94cafbc1f91bcd66ca);
+            
+        
+
+        circle_marker_fe7ad7bccc676c83a68c4a7766d8aeb8.bindPopup(popup_d4f6099ac65cb3a027efeb0cd893e169)
+        ;
+
+        
+    
+    
+            circle_marker_fe7ad7bccc676c83a68c4a7766d8aeb8.bindTooltip(
+                `<div>
+                     CERRITO: -6,639 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_435cbc6a781e65ac74d116ff9c359d79 = L.circleMarker(
+                [6.2833, -73.1333],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7ac55dff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.393140669365768, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_1f957d64e50aea8698b394fbe9f8bbe4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_df06732d828039d1a106dbfd02946f4c = $(`<div id="html_df06732d828039d1a106dbfd02946f4c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">CHARALA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -80,897 ton CO₂eq<br>             <b>Clasificación:</b> Sumidero<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 67,228 ton<br>             <b>Captura:</b> 148,125 ton<br>             <b>IEC:</b> 32.6         </div>         </div>`)[0];
+                popup_1f957d64e50aea8698b394fbe9f8bbe4.setContent(html_df06732d828039d1a106dbfd02946f4c);
+            
+        
+
+        circle_marker_435cbc6a781e65ac74d116ff9c359d79.bindPopup(popup_1f957d64e50aea8698b394fbe9f8bbe4)
+        ;
+
+        
+    
+    
+            circle_marker_435cbc6a781e65ac74d116ff9c359d79.bindTooltip(
+                `<div>
+                     CHARALA: -80,897 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df91b4f0f019168f55662bde2701ebb1 = L.circleMarker(
+                [7.2833, -72.9833],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9fd668ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_2f3cd52c44df301489dbefd413d4cc5e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_263964de5b9f6b5095102ef6ce60cb3f = $(`<div id="html_263964de5b9f6b5095102ef6ce60cb3f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">CHARTA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -33,208 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 10,541 ton<br>             <b>Captura:</b> 43,749 ton<br>             <b>IEC:</b> 45.2         </div>         </div>`)[0];
+                popup_2f3cd52c44df301489dbefd413d4cc5e.setContent(html_263964de5b9f6b5095102ef6ce60cb3f);
+            
+        
+
+        circle_marker_df91b4f0f019168f55662bde2701ebb1.bindPopup(popup_2f3cd52c44df301489dbefd413d4cc5e)
+        ;
+
+        
+    
+    
+            circle_marker_df91b4f0f019168f55662bde2701ebb1.bindTooltip(
+                `<div>
+                     CHARTA: -33,208 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_40cd5f5d13065dc343db8dcb7fb84527 = L.circleMarker(
+                [6.3833, -73.5333],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9ad365ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_a30f0a5a949ca30d8c2a25464d79ed71 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bca8cf1b1adaf6d25948860b9674c8f2 = $(`<div id="html_bca8cf1b1adaf6d25948860b9674c8f2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">CHIMA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -42,215 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 22,342 ton<br>             <b>Captura:</b> 64,558 ton<br>             <b>IEC:</b> 42.8         </div>         </div>`)[0];
+                popup_a30f0a5a949ca30d8c2a25464d79ed71.setContent(html_bca8cf1b1adaf6d25948860b9674c8f2);
+            
+        
+
+        circle_marker_40cd5f5d13065dc343db8dcb7fb84527.bindPopup(popup_a30f0a5a949ca30d8c2a25464d79ed71)
+        ;
+
+        
+    
+    
+            circle_marker_40cd5f5d13065dc343db8dcb7fb84527.bindTooltip(
+                `<div>
+                     CHIMA: -42,215 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5f155ba545e851657ad4048ecc35f1b6 = L.circleMarker(
+                [6.5667, -72.7333],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#afdd72ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_04d4c076d80538f5d8163b1578ee950e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9fdd334e662603b52739c137d733e99c = $(`<div id="html_9fdd334e662603b52739c137d733e99c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">CHIPATA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -6,335 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 11,837 ton<br>             <b>Captura:</b> 18,172 ton<br>             <b>IEC:</b> 52.8         </div>         </div>`)[0];
+                popup_04d4c076d80538f5d8163b1578ee950e.setContent(html_9fdd334e662603b52739c137d733e99c);
+            
+        
+
+        circle_marker_5f155ba545e851657ad4048ecc35f1b6.bindPopup(popup_04d4c076d80538f5d8163b1578ee950e)
+        ;
+
+        
+    
+    
+            circle_marker_5f155ba545e851657ad4048ecc35f1b6.bindTooltip(
+                `<div>
+                     CHIPATA: -6,335 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e0be4189503d8222e9bad8f9ab2de1f7 = L.circleMarker(
+                [6.3167, -73.9333],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdb671ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.696210777876598, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_1b7e989b3554b0309dc2cd31773ca909 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_df0d7da1ce5fe31f5ffee5ab61653f94 = $(`<div id="html_df0d7da1ce5fe31f5ffee5ab61653f94" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">CIMITARRA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 370,443 ton CO₂eq<br>             <b>Clasificación:</b> Emisor<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 894,655 ton<br>             <b>Captura:</b> 524,212 ton<br>             <b>IEC:</b> 98.7         </div>         </div>`)[0];
+                popup_1b7e989b3554b0309dc2cd31773ca909.setContent(html_df0d7da1ce5fe31f5ffee5ab61653f94);
+            
+        
+
+        circle_marker_e0be4189503d8222e9bad8f9ab2de1f7.bindPopup(popup_1b7e989b3554b0309dc2cd31773ca909)
+        ;
+
+        
+    
+    
+            circle_marker_e0be4189503d8222e9bad8f9ab2de1f7.bindTooltip(
+                `<div>
+                     CIMITARRA: 370,443 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9259aa417c29ae6b0df85f2fa4c7ca33 = L.circleMarker(
+                [6.3833, -72.7],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a7d96dff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_486ba4dd1c5dfa45a98e3c5bea7b1630 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_384e9de7f861df61fadd1a94e94341d9 = $(`<div id="html_384e9de7f861df61fadd1a94e94341d9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">CONCEPCION</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -19,669 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 21,965 ton<br>             <b>Captura:</b> 41,634 ton<br>             <b>IEC:</b> 49.0         </div>         </div>`)[0];
+                popup_486ba4dd1c5dfa45a98e3c5bea7b1630.setContent(html_384e9de7f861df61fadd1a94e94341d9);
+            
+        
+
+        circle_marker_9259aa417c29ae6b0df85f2fa4c7ca33.bindPopup(popup_486ba4dd1c5dfa45a98e3c5bea7b1630)
+        ;
+
+        
+    
+    
+            circle_marker_9259aa417c29ae6b0df85f2fa4c7ca33.bindTooltip(
+                `<div>
+                     CONCEPCION: -19,669 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_12a41e1284939ef463597ca35c22aba2 = L.circleMarker(
+                [6.35, -73.1167],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b2de73ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_cd9a4f5115aea11b5287baa1708f5b15 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6c9421d6354d6791bef5d198d8d5ce2d = $(`<div id="html_6c9421d6354d6791bef5d198d8d5ce2d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">CONFINES</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -2,408 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 17,155 ton<br>             <b>Captura:</b> 19,562 ton<br>             <b>IEC:</b> 53.9         </div>         </div>`)[0];
+                popup_cd9a4f5115aea11b5287baa1708f5b15.setContent(html_6c9421d6354d6791bef5d198d8d5ce2d);
+            
+        
+
+        circle_marker_12a41e1284939ef463597ca35c22aba2.bindPopup(popup_cd9a4f5115aea11b5287baa1708f5b15)
+        ;
+
+        
+    
+    
+            circle_marker_12a41e1284939ef463597ca35c22aba2.bindTooltip(
+                `<div>
+                     CONFINES: -2,408 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f28433b6ce86bc7daa21a72b553ebc9 = L.circleMarker(
+                [6.2833, -73.4333],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a2d76aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_2735f34d58af42cb56a3e37ed869bf30 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8647ce0447b54aff3f495c2cb6bc38cc = $(`<div id="html_8647ce0447b54aff3f495c2cb6bc38cc" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">CONTRATACION</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -28,319 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 18,053 ton<br>             <b>Captura:</b> 46,372 ton<br>             <b>IEC:</b> 46.6         </div>         </div>`)[0];
+                popup_2735f34d58af42cb56a3e37ed869bf30.setContent(html_8647ce0447b54aff3f495c2cb6bc38cc);
+            
+        
+
+        circle_marker_8f28433b6ce86bc7daa21a72b553ebc9.bindPopup(popup_2735f34d58af42cb56a3e37ed869bf30)
+        ;
+
+        
+    
+    
+            circle_marker_8f28433b6ce86bc7daa21a72b553ebc9.bindTooltip(
+                `<div>
+                     CONTRATACION: -28,319 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bceb1aef2bcf8d477f44905ef20bf83e = L.circleMarker(
+                [6.35, -72.9333],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a9850ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.951851221497416, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_2456e7cc3635f45d43f8363ca96d69d0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f579d55eabe504f7e758b61ecae2377e = $(`<div id="html_f579d55eabe504f7e758b61ecae2377e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">COROMORO</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -179,278 ton CO₂eq<br>             <b>Clasificación:</b> Sumidero<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 33,249 ton<br>             <b>Captura:</b> 212,527 ton<br>             <b>IEC:</b> 13.8         </div>         </div>`)[0];
+                popup_2456e7cc3635f45d43f8363ca96d69d0.setContent(html_f579d55eabe504f7e758b61ecae2377e);
+            
+        
+
+        circle_marker_bceb1aef2bcf8d477f44905ef20bf83e.bindPopup(popup_2456e7cc3635f45d43f8363ca96d69d0)
+        ;
+
+        
+    
+    
+            circle_marker_bceb1aef2bcf8d477f44905ef20bf83e.bindTooltip(
+                `<div>
+                     COROMORO: -179,278 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b7d3ddacafa7ff70ef57b79a36bfc4ed = L.circleMarker(
+                [6.6167, -72.9833],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdae6cff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_442ef5657f1b1dbc8e057cbabfa5cca0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c919829ee812b25a0e0ca2cd762409c9 = $(`<div id="html_c919829ee812b25a0e0ca2cd762409c9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">CURITI</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 382,462 ton CO₂eq<br>             <b>Clasificación:</b> Emisor<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 433,491 ton<br>             <b>Captura:</b> 51,029 ton<br>             <b>IEC:</b> 98.9         </div>         </div>`)[0];
+                popup_442ef5657f1b1dbc8e057cbabfa5cca0.setContent(html_c919829ee812b25a0e0ca2cd762409c9);
+            
+        
+
+        circle_marker_b7d3ddacafa7ff70ef57b79a36bfc4ed.bindPopup(popup_442ef5657f1b1dbc8e057cbabfa5cca0)
+        ;
+
+        
+    
+    
+            circle_marker_b7d3ddacafa7ff70ef57b79a36bfc4ed.bindTooltip(
+                `<div>
+                     CURITI: 382,462 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f6232bdb10fe9b8e200de59199b8be63 = L.circleMarker(
+                [6.7, -73.5167],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4aae56ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.676656594355926, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_4ae87e8dee0dd739fcc836ea95f16681 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c4fa902f5223499ba6b3cd477d7c710e = $(`<div id="html_c4fa902f5223499ba6b3cd477d7c710e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">EL CARMEN DE CHUCURI</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -130,150 ton CO₂eq<br>             <b>Clasificación:</b> Sumidero<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 217,010 ton<br>             <b>Captura:</b> 347,160 ton<br>             <b>IEC:</b> 21.8         </div>         </div>`)[0];
+                popup_4ae87e8dee0dd739fcc836ea95f16681.setContent(html_c4fa902f5223499ba6b3cd477d7c710e);
+            
+        
+
+        circle_marker_f6232bdb10fe9b8e200de59199b8be63.bindPopup(popup_4ae87e8dee0dd739fcc836ea95f16681)
+        ;
+
+        
+    
+    
+            circle_marker_f6232bdb10fe9b8e200de59199b8be63.bindTooltip(
+                `<div>
+                     EL CARMEN DE CHUCURI: -130,150 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b5b368653464df2fb01ca44eb9ef469 = L.circleMarker(
+                [6.3833, -73.6167],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9dd567ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_3ad0fcdc9dbb20dd6893111ffd2a6de0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8109d1a17f313904cd4434ea0e32096c = $(`<div id="html_8109d1a17f313904cd4434ea0e32096c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">EL GUACAMAYO</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -37,174 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 14,095 ton<br>             <b>Captura:</b> 51,269 ton<br>             <b>IEC:</b> 44.1         </div>         </div>`)[0];
+                popup_3ad0fcdc9dbb20dd6893111ffd2a6de0.setContent(html_8109d1a17f313904cd4434ea0e32096c);
+            
+        
+
+        circle_marker_7b5b368653464df2fb01ca44eb9ef469.bindPopup(popup_3ad0fcdc9dbb20dd6893111ffd2a6de0)
+        ;
+
+        
+    
+    
+            circle_marker_7b5b368653464df2fb01ca44eb9ef469.bindTooltip(
+                `<div>
+                     EL GUACAMAYO: -37,174 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ade1d3c895dbabcfcdb91fcfd6cbb692 = L.circleMarker(
+                [6.0333, -73.95],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9ad365ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_88a1541869b31b8bff7c7d98ba9b9e42 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ff2bd472f1efa1ca054c12082aca0188 = $(`<div id="html_ff2bd472f1efa1ca054c12082aca0188" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">EL PENON</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -42,926 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 25,976 ton<br>             <b>Captura:</b> 68,902 ton<br>             <b>IEC:</b> 42.6         </div>         </div>`)[0];
+                popup_88a1541869b31b8bff7c7d98ba9b9e42.setContent(html_ff2bd472f1efa1ca054c12082aca0188);
+            
+        
+
+        circle_marker_ade1d3c895dbabcfcdb91fcfd6cbb692.bindPopup(popup_88a1541869b31b8bff7c7d98ba9b9e42)
+        ;
+
+        
+    
+    
+            circle_marker_ade1d3c895dbabcfcdb91fcfd6cbb692.bindTooltip(
+                `<div>
+                     EL PENON: -42,926 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c91bac9b68bfe0e83527087773e29392 = L.circleMarker(
+                [7.4833, -73.2],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#54b358ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.989370286174429, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_98a91c0f9c1e983060fc1bfa1e8d8949 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_efc867988dde3eae20f9ee3650172555 = $(`<div id="html_efc867988dde3eae20f9ee3650172555" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">EL PLAYON</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -119,841 ton CO₂eq<br>             <b>Clasificación:</b> Sumidero<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 56,830 ton<br>             <b>Captura:</b> 176,671 ton<br>             <b>IEC:</b> 23.8         </div>         </div>`)[0];
+                popup_98a91c0f9c1e983060fc1bfa1e8d8949.setContent(html_efc867988dde3eae20f9ee3650172555);
+            
+        
+
+        circle_marker_c91bac9b68bfe0e83527087773e29392.bindPopup(popup_98a91c0f9c1e983060fc1bfa1e8d8949)
+        ;
+
+        
+    
+    
+            circle_marker_c91bac9b68bfe0e83527087773e29392.bindTooltip(
+                `<div>
+                     EL PLAYON: -119,841 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6c2c05152a22284b18dba42bf2d3513c = L.circleMarker(
+                [6.15, -73.1333],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#52b257ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.090947863355447, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_d4db9627428b348a6af08996af8470c1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b2f30b0a6ab0313306429d15f3eb1c80 = $(`<div id="html_b2f30b0a6ab0313306429d15f3eb1c80" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">ENCINO</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -121,364 ton CO₂eq<br>             <b>Clasificación:</b> Sumidero<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 18,848 ton<br>             <b>Captura:</b> 140,213 ton<br>             <b>IEC:</b> 23.5         </div>         </div>`)[0];
+                popup_d4db9627428b348a6af08996af8470c1.setContent(html_b2f30b0a6ab0313306429d15f3eb1c80);
+            
+        
+
+        circle_marker_6c2c05152a22284b18dba42bf2d3513c.bindPopup(popup_d4db9627428b348a6af08996af8470c1)
+        ;
+
+        
+    
+    
+            circle_marker_6c2c05152a22284b18dba42bf2d3513c.bindTooltip(
+                `<div>
+                     ENCINO: -121,364 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0601d085bbd06104faa45334a337a201 = L.circleMarker(
+                [6.2333, -72.65],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b5df75ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_e78ba5912ab3ce977b9356ff1552b171 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5b53d0c21e03ee020791271d43306d63 = $(`<div id="html_5b53d0c21e03ee020791271d43306d63" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">ENCISO</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 2,572 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 22,911 ton<br>             <b>Captura:</b> 20,339 ton<br>             <b>IEC:</b> 55.2         </div>         </div>`)[0];
+                popup_e78ba5912ab3ce977b9356ff1552b171.setContent(html_5b53d0c21e03ee020791271d43306d63);
+            
+        
+
+        circle_marker_0601d085bbd06104faa45334a337a201.bindPopup(popup_e78ba5912ab3ce977b9356ff1552b171)
+        ;
+
+        
+    
+    
+            circle_marker_0601d085bbd06104faa45334a337a201.bindTooltip(
+                `<div>
+                     ENCISO: 2,572 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_058f90dea5696e2cade7cd49e25558fc = L.circleMarker(
+                [7.065, -73.0867],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9ad365ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_4cd980af8c98fee4e9772431d4657800 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d5f1794366a1bf547ecdec89930a6bfd = $(`<div id="html_d5f1794366a1bf547ecdec89930a6bfd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">FLORIAN</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -42,054 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 22,674 ton<br>             <b>Captura:</b> 64,728 ton<br>             <b>IEC:</b> 42.8         </div>         </div>`)[0];
+                popup_4cd980af8c98fee4e9772431d4657800.setContent(html_d5f1794366a1bf547ecdec89930a6bfd);
+            
+        
+
+        circle_marker_058f90dea5696e2cade7cd49e25558fc.bindPopup(popup_4cd980af8c98fee4e9772431d4657800)
+        ;
+
+        
+    
+    
+            circle_marker_058f90dea5696e2cade7cd49e25558fc.bindTooltip(
+                `<div>
+                     FLORIAN: -42,054 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_097869c49e6d363a8635c7b6e51250d0 = L.circleMarker(
+                [5.8333, -73.95],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c8e881ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_b717957290fa53216a87eb7e4b9de859 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_298fcdf203fb3787402d7df1a123f8de = $(`<div id="html_298fcdf203fb3787402d7df1a123f8de" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">FLORIDABLANCA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 35,341 ton CO₂eq<br>             <b>Clasificación:</b> Emisor<br>             <b>Perfil:</b> Urbano-Industrial<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 61,836 ton<br>             <b>Captura:</b> 26,496 ton<br>             <b>IEC:</b> 64.1         </div>         </div>`)[0];
+                popup_b717957290fa53216a87eb7e4b9de859.setContent(html_298fcdf203fb3787402d7df1a123f8de);
+            
+        
+
+        circle_marker_097869c49e6d363a8635c7b6e51250d0.bindPopup(popup_b717957290fa53216a87eb7e4b9de859)
+        ;
+
+        
+    
+    
+            circle_marker_097869c49e6d363a8635c7b6e51250d0.bindTooltip(
+                `<div>
+                     FLORIDABLANCA: 35,341 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_29189dfcebfa07ca27e9214333772ef4 = L.circleMarker(
+                [6.65, -73.0833],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#96d263ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_aab9260156ad8c4d74c3ebf46c996309 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_77b5b41338d0dd36bee1e0b4c8a06f1b = $(`<div id="html_77b5b41338d0dd36bee1e0b4c8a06f1b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">GALAN</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -48,862 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 17,032 ton<br>             <b>Captura:</b> 65,895 ton<br>             <b>IEC:</b> 40.9         </div>         </div>`)[0];
+                popup_aab9260156ad8c4d74c3ebf46c996309.setContent(html_77b5b41338d0dd36bee1e0b4c8a06f1b);
+            
+        
+
+        circle_marker_29189dfcebfa07ca27e9214333772ef4.bindPopup(popup_aab9260156ad8c4d74c3ebf46c996309)
+        ;
+
+        
+    
+    
+            circle_marker_29189dfcebfa07ca27e9214333772ef4.bindTooltip(
+                `<div>
+                     GALAN: -48,862 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9cfbe6c2f787eb458c5d58c8d056ea8b = L.circleMarker(
+                [6.05, -73.35],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2da152ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.666171923086647, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_9142a2125c574df891bd0123743dedb8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_81e54b25c823011308c5855defcf0372 = $(`<div id="html_81e54b25c823011308c5855defcf0372" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">GAMBITA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -159,993 ton CO₂eq<br>             <b>Clasificación:</b> Sumidero<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 38,681 ton<br>             <b>Captura:</b> 198,673 ton<br>             <b>IEC:</b> 16.6         </div>         </div>`)[0];
+                popup_9142a2125c574df891bd0123743dedb8.setContent(html_81e54b25c823011308c5855defcf0372);
+            
+        
+
+        circle_marker_9cfbe6c2f787eb458c5d58c8d056ea8b.bindPopup(popup_9142a2125c574df891bd0123743dedb8)
+        ;
+
+        
+    
+    
+            circle_marker_9cfbe6c2f787eb458c5d58c8d056ea8b.bindTooltip(
+                `<div>
+                     GAMBITA: -159,993 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_57b5daefce9bea23c32dc0d6d5c572e9 = L.circleMarker(
+                [7.0667, -73.1667],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e0f294ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.665790974217901, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_b1581e6705ed7ffe48d05c8f4a533afc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ea589627c576b1705276dc28d50caff1 = $(`<div id="html_ea589627c576b1705276dc28d50caff1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">GIRON</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 84,987 ton CO₂eq<br>             <b>Clasificación:</b> Emisor<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 197,260 ton<br>             <b>Captura:</b> 112,273 ton<br>             <b>IEC:</b> 75.7         </div>         </div>`)[0];
+                popup_b1581e6705ed7ffe48d05c8f4a533afc.setContent(html_ea589627c576b1705276dc28d50caff1);
+            
+        
+
+        circle_marker_57b5daefce9bea23c32dc0d6d5c572e9.bindPopup(popup_b1581e6705ed7ffe48d05c8f4a533afc)
+        ;
+
+        
+    
+    
+            circle_marker_57b5daefce9bea23c32dc0d6d5c572e9.bindTooltip(
+                `<div>
+                     GIRON: 84,987 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_037ba118f9f2d34aaf40088232d9e136 = L.circleMarker(
+                [6.8833, -72.85],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a0d669ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_f37a20937ab87e8c7e745bb53107ab03 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_408994ee1ed816722a64067b64b6550f = $(`<div id="html_408994ee1ed816722a64067b64b6550f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">GUACA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -32,372 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 22,890 ton<br>             <b>Captura:</b> 55,262 ton<br>             <b>IEC:</b> 45.5         </div>         </div>`)[0];
+                popup_f37a20937ab87e8c7e745bb53107ab03.setContent(html_408994ee1ed816722a64067b64b6550f);
+            
+        
+
+        circle_marker_037ba118f9f2d34aaf40088232d9e136.bindPopup(popup_f37a20937ab87e8c7e745bb53107ab03)
+        ;
+
+        
+    
+    
+            circle_marker_037ba118f9f2d34aaf40088232d9e136.bindTooltip(
+                `<div>
+                     GUACA: -32,372 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2d5e4a2de876571f6724c1d261eb370e = L.circleMarker(
+                [6.25, -72.65],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a9da6eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_c14c6fa445241a39a2d51b6459edd5d7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b616436e74b92d46f31bda0fdc38efee = $(`<div id="html_b616436e74b92d46f31bda0fdc38efee" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">GUADALUPE</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -17,418 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 28,908 ton<br>             <b>Captura:</b> 46,326 ton<br>             <b>IEC:</b> 49.7         </div>         </div>`)[0];
+                popup_c14c6fa445241a39a2d51b6459edd5d7.setContent(html_b616436e74b92d46f31bda0fdc38efee);
+            
+        
+
+        circle_marker_2d5e4a2de876571f6724c1d261eb370e.bindPopup(popup_c14c6fa445241a39a2d51b6459edd5d7)
+        ;
+
+        
+    
+    
+            circle_marker_2d5e4a2de876571f6724c1d261eb370e.bindTooltip(
+                `<div>
+                     GUADALUPE: -17,418 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_98a2508069b60c0d1dd8184cef18f9f6 = L.circleMarker(
+                [6.3333, -73.0833],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b4df75ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_d3892d759c8e92ec6e7e699eb657c350 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_41dea4e7e0c6621da4c9f807255010cd = $(`<div id="html_41dea4e7e0c6621da4c9f807255010cd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">GUAPOTA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 952 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 20,194 ton<br>             <b>Captura:</b> 19,242 ton<br>             <b>IEC:</b> 54.8         </div>         </div>`)[0];
+                popup_d3892d759c8e92ec6e7e699eb657c350.setContent(html_41dea4e7e0c6621da4c9f807255010cd);
+            
+        
+
+        circle_marker_98a2508069b60c0d1dd8184cef18f9f6.bindPopup(popup_d3892d759c8e92ec6e7e699eb657c350)
+        ;
+
+        
+    
+    
+            circle_marker_98a2508069b60c0d1dd8184cef18f9f6.bindTooltip(
+                `<div>
+                     GUAPOTA: 952 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9aa69a46d3f5b2c4295902a3ea0cd8a8 = L.circleMarker(
+                [5.95, -73.6833],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a9da6eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_5c7a2a31cb1116e3a61efda0477d73ff = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_28b0d89a93a539431a10809797661222 = $(`<div id="html_28b0d89a93a539431a10809797661222" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">GUAVATA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -17,232 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 11,232 ton<br>             <b>Captura:</b> 28,464 ton<br>             <b>IEC:</b> 49.7         </div>         </div>`)[0];
+                popup_5c7a2a31cb1116e3a61efda0477d73ff.setContent(html_28b0d89a93a539431a10809797661222);
+            
+        
+
+        circle_marker_9aa69a46d3f5b2c4295902a3ea0cd8a8.bindPopup(popup_5c7a2a31cb1116e3a61efda0477d73ff)
+        ;
+
+        
+    
+    
+            circle_marker_9aa69a46d3f5b2c4295902a3ea0cd8a8.bindTooltip(
+                `<div>
+                     GUAVATA: -17,232 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_76a5e9804ddd2810e22f7026c65e83e8 = L.circleMarker(
+                [6.0333, -73.5667],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b2de74ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_8441e6b706f45d23ebb481f1b40b785d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7dcc71e35dbd51d286df6645590859fa = $(`<div id="html_7dcc71e35dbd51d286df6645590859fa" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">GUEPSA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -1,239 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 4,429 ton<br>             <b>Captura:</b> 5,669 ton<br>             <b>IEC:</b> 54.2         </div>         </div>`)[0];
+                popup_8441e6b706f45d23ebb481f1b40b785d.setContent(html_7dcc71e35dbd51d286df6645590859fa);
+            
+        
+
+        circle_marker_76a5e9804ddd2810e22f7026c65e83e8.bindPopup(popup_8441e6b706f45d23ebb481f1b40b785d)
+        ;
+
+        
+    
+    
+            circle_marker_76a5e9804ddd2810e22f7026c65e83e8.bindTooltip(
+                `<div>
+                     GUEPSA: -1,239 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_70983666b7b05cdab6d55a87542478b9 = L.circleMarker(
+                [6.55, -73.1333],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#92d060ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_da56b5cfabdd8e98e9a5683b74cb202a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b9c7aa12cc6d1ee5a3c34197da04e525 = $(`<div id="html_b9c7aa12cc6d1ee5a3c34197da04e525" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">HATO</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -55,918 ton CO₂eq<br>             <b>Clasificación:</b> Sumidero<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 10,817 ton<br>             <b>Captura:</b> 66,735 ton<br>             <b>IEC:</b> 39.0         </div>         </div>`)[0];
+                popup_da56b5cfabdd8e98e9a5683b74cb202a.setContent(html_b9c7aa12cc6d1ee5a3c34197da04e525);
+            
+        
+
+        circle_marker_70983666b7b05cdab6d55a87542478b9.bindPopup(popup_da56b5cfabdd8e98e9a5683b74cb202a)
+        ;
+
+        
+    
+    
+            circle_marker_70983666b7b05cdab6d55a87542478b9.bindTooltip(
+                `<div>
+                     HATO: -55,918 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_51cff23d06eddf91725da32a369f9aac = L.circleMarker(
+                [5.9, -73.7667],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a7d96dff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_d17e577c2a468ef3da481767e3f9b7c1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d60abc81cdf1d750abee5f03bf3d89b9 = $(`<div id="html_d60abc81cdf1d750abee5f03bf3d89b9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">JESUS MARIA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -20,334 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 9,163 ton<br>             <b>Captura:</b> 29,497 ton<br>             <b>IEC:</b> 48.8         </div>         </div>`)[0];
+                popup_d17e577c2a468ef3da481767e3f9b7c1.setContent(html_d60abc81cdf1d750abee5f03bf3d89b9);
+            
+        
+
+        circle_marker_51cff23d06eddf91725da32a369f9aac.bindPopup(popup_d17e577c2a468ef3da481767e3f9b7c1)
+        ;
+
+        
+    
+    
+            circle_marker_51cff23d06eddf91725da32a369f9aac.bindTooltip(
+                `<div>
+                     JESUS MARIA: -20,334 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9d062ada2318238252eed85e3341814 = L.circleMarker(
+                [6.7, -73.0833],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#afdd72ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_4bc5b9391c9d873467eeeba826bbac92 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_df226affa0d208f5de5109f23acb2e0d = $(`<div id="html_df226affa0d208f5de5109f23acb2e0d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">JORDAN</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -6,937 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 2,543 ton<br>             <b>Captura:</b> 9,480 ton<br>             <b>IEC:</b> 52.6         </div>         </div>`)[0];
+                popup_4bc5b9391c9d873467eeeba826bbac92.setContent(html_df226affa0d208f5de5109f23acb2e0d);
+            
+        
+
+        circle_marker_d9d062ada2318238252eed85e3341814.bindPopup(popup_4bc5b9391c9d873467eeeba826bbac92)
+        ;
+
+        
+    
+    
+            circle_marker_d9d062ada2318238252eed85e3341814.bindTooltip(
+                `<div>
+                     JORDAN: -6,937 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_466846469a03b0e1e1834b9502686f99 = L.circleMarker(
+                [5.8667, -73.9667],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9fd568ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_7e9625f1ddd77289409cd1b050ada98c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dca0678d0f1526221d1f5c93ef9f78f8 = $(`<div id="html_dca0678d0f1526221d1f5c93ef9f78f8" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">LA BELLEZA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -34,588 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 96,704 ton<br>             <b>Captura:</b> 131,291 ton<br>             <b>IEC:</b> 44.9         </div>         </div>`)[0];
+                popup_7e9625f1ddd77289409cd1b050ada98c.setContent(html_dca0678d0f1526221d1f5c93ef9f78f8);
+            
+        
+
+        circle_marker_466846469a03b0e1e1834b9502686f99.bindPopup(popup_7e9625f1ddd77289409cd1b050ada98c)
+        ;
+
+        
+    
+    
+            circle_marker_466846469a03b0e1e1834b9502686f99.bindTooltip(
+                `<div>
+                     LA BELLEZA: -34,588 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ca39efd74397c29c8936f28aabf48fe = L.circleMarker(
+                [6.1833, -73.5833],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#81c85eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_5ecd96b93d91dc86a1213e21a1d40d06 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7fffc4d9c9f5d364b775faa7d7383208 = $(`<div id="html_7fffc4d9c9f5d364b775faa7d7383208" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">LA PAZ</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -74,026 ton CO₂eq<br>             <b>Clasificación:</b> Sumidero<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 25,398 ton<br>             <b>Captura:</b> 99,424 ton<br>             <b>IEC:</b> 34.3         </div>         </div>`)[0];
+                popup_5ecd96b93d91dc86a1213e21a1d40d06.setContent(html_7fffc4d9c9f5d364b775faa7d7383208);
+            
+        
+
+        circle_marker_5ca39efd74397c29c8936f28aabf48fe.bindPopup(popup_5ecd96b93d91dc86a1213e21a1d40d06)
+        ;
+
+        
+    
+    
+            circle_marker_5ca39efd74397c29c8936f28aabf48fe.bindTooltip(
+                `<div>
+                     LA PAZ: -74,026 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad6cd55c53620292e9c6dc06d6e7bac3 = L.circleMarker(
+                [6.2167, -73.8167],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ddf190ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.021301671475799, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_705c1d3779004b1d44fa12292917ea63 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d40e2c3fc4b8130c071cea82d9e17d82 = $(`<div id="html_d40e2c3fc4b8130c071cea82d9e17d82" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">LANDAZURI</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 75,320 ton CO₂eq<br>             <b>Clasificación:</b> Emisor<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 285,117 ton<br>             <b>Captura:</b> 209,797 ton<br>             <b>IEC:</b> 73.6         </div>         </div>`)[0];
+                popup_705c1d3779004b1d44fa12292917ea63.setContent(html_d40e2c3fc4b8130c071cea82d9e17d82);
+            
+        
+
+        circle_marker_ad6cd55c53620292e9c6dc06d6e7bac3.bindPopup(popup_705c1d3779004b1d44fa12292917ea63)
+        ;
+
+        
+    
+    
+            circle_marker_ad6cd55c53620292e9c6dc06d6e7bac3.bindTooltip(
+                `<div>
+                     LANDAZURI: 75,320 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f7dd23691e7f875c2ba42aa5ecbcd2f2 = L.circleMarker(
+                [7.1167, -73.2167],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9ed567ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_1f15c2719543dc92da1c7131fd580667 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_72b4ab8fee052bffcfeb44d573601663 = $(`<div id="html_72b4ab8fee052bffcfeb44d573601663" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">LEBRIJA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -36,067 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 110,504 ton<br>             <b>Captura:</b> 146,571 ton<br>             <b>IEC:</b> 44.5         </div>         </div>`)[0];
+                popup_1f15c2719543dc92da1c7131fd580667.setContent(html_72b4ab8fee052bffcfeb44d573601663);
+            
+        
+
+        circle_marker_f7dd23691e7f875c2ba42aa5ecbcd2f2.bindPopup(popup_1f15c2719543dc92da1c7131fd580667)
+        ;
+
+        
+    
+    
+            circle_marker_f7dd23691e7f875c2ba42aa5ecbcd2f2.bindTooltip(
+                `<div>
+                     LEBRIJA: -36,067 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1156a519505a9399f7780be61fc536d6 = L.circleMarker(
+                [6.7833, -73.1],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f3faafff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.836841191087403, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_dc5fa6b97655d7cf77fa1dd983089035 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_51a47a2b6bb8ec6146682f71df6c17df = $(`<div id="html_51a47a2b6bb8ec6146682f71df6c17df" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">LOS SANTOS</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 147,553 ton CO₂eq<br>             <b>Clasificación:</b> Emisor<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 178,009 ton<br>             <b>Captura:</b> 30,456 ton<br>             <b>IEC:</b> 86.3         </div>         </div>`)[0];
+                popup_dc5fa6b97655d7cf77fa1dd983089035.setContent(html_51a47a2b6bb8ec6146682f71df6c17df);
+            
+        
+
+        circle_marker_1156a519505a9399f7780be61fc536d6.bindPopup(popup_dc5fa6b97655d7cf77fa1dd983089035)
+        ;
+
+        
+    
+    
+            circle_marker_1156a519505a9399f7780be61fc536d6.bindTooltip(
+                `<div>
+                     LOS SANTOS: 147,553 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_69d79162ceb0aeda2d217eefac9cd05f = L.circleMarker(
+                [6.5, -72.5833],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aada6eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_0ed0cf4af69c1b3de44d7f2ae4efd76e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_179d8219b3c70a2f47382942a0c96e56 = $(`<div id="html_179d8219b3c70a2f47382942a0c96e56" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">MACARAVITA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -16,208 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 10,052 ton<br>             <b>Captura:</b> 26,259 ton<br>             <b>IEC:</b> 50.0         </div>         </div>`)[0];
+                popup_0ed0cf4af69c1b3de44d7f2ae4efd76e.setContent(html_179d8219b3c70a2f47382942a0c96e56);
+            
+        
+
+        circle_marker_69d79162ceb0aeda2d217eefac9cd05f.bindPopup(popup_0ed0cf4af69c1b3de44d7f2ae4efd76e)
+        ;
+
+        
+    
+    
+            circle_marker_69d79162ceb0aeda2d217eefac9cd05f.bindTooltip(
+                `<div>
+                     MACARAVITA: -16,208 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d7929977ca3cafa97dcfa0d837a60cb0 = L.circleMarker(
+                [6.7, -72.7333],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0e47cff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_104f0bf85d03ae1bd211ec54b6e7c7be = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f2f854d2dbc5eec0d04ce5ebd9179525 = $(`<div id="html_f2f854d2dbc5eec0d04ce5ebd9179525" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">MALAGA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 21,108 ton CO₂eq<br>             <b>Clasificación:</b> Emisor<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 29,657 ton<br>             <b>Captura:</b> 8,549 ton<br>             <b>IEC:</b> 60.3         </div>         </div>`)[0];
+                popup_104f0bf85d03ae1bd211ec54b6e7c7be.setContent(html_f2f854d2dbc5eec0d04ce5ebd9179525);
+            
+        
+
+        circle_marker_d7929977ca3cafa97dcfa0d837a60cb0.bindPopup(popup_104f0bf85d03ae1bd211ec54b6e7c7be)
+        ;
+
+        
+    
+    
+            circle_marker_d7929977ca3cafa97dcfa0d837a60cb0.bindTooltip(
+                `<div>
+                     MALAGA: 21,108 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3478186cd464265f5f82d14283c8665b = L.circleMarker(
+                [7.3333, -73.0167],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#86ca5eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_659cec7492e648c9785865d02f81315e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ccccc6d1189fd36785231c00ec9cd1f7 = $(`<div id="html_ccccc6d1189fd36785231c00ec9cd1f7" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">MATANZA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -68,356 ton CO₂eq<br>             <b>Clasificación:</b> Sumidero<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 21,128 ton<br>             <b>Captura:</b> 89,484 ton<br>             <b>IEC:</b> 35.8         </div>         </div>`)[0];
+                popup_659cec7492e648c9785865d02f81315e.setContent(html_ccccc6d1189fd36785231c00ec9cd1f7);
+            
+        
+
+        circle_marker_3478186cd464265f5f82d14283c8665b.bindPopup(popup_659cec7492e648c9785865d02f81315e)
+        ;
+
+        
+    
+    
+            circle_marker_3478186cd464265f5f82d14283c8665b.bindTooltip(
+                `<div>
+                     MATANZA: -68,356 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ea9c3b2790d3909681c22c87395b5bc = L.circleMarker(
+                [6.4833, -72.9667],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47ad56ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.884955713296078, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_30192feec79e996678389eeffa215452 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_27e6ef47ad38458f46e96867f9c5a534 = $(`<div id="html_27e6ef47ad38458f46e96867f9c5a534" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">MOGOTES</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -133,274 ton CO₂eq<br>             <b>Clasificación:</b> Sumidero<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 25,771 ton<br>             <b>Captura:</b> 159,045 ton<br>             <b>IEC:</b> 21.2         </div>         </div>`)[0];
+                popup_30192feec79e996678389eeffa215452.setContent(html_27e6ef47ad38458f46e96867f9c5a534);
+            
+        
+
+        circle_marker_5ea9c3b2790d3909681c22c87395b5bc.bindPopup(popup_30192feec79e996678389eeffa215452)
+        ;
+
+        
+    
+    
+            circle_marker_5ea9c3b2790d3909681c22c87395b5bc.bindTooltip(
+                `<div>
+                     MOGOTES: -133,274 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d967d854c9585f5c1f210cd16936347a = L.circleMarker(
+                [6.75, -72.8167],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a4d86bff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_4ffc42469bfeff44187ac8662e1a15d3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_726e289e671c14e324d64d94d942ea65 = $(`<div id="html_726e289e671c14e324d64d94d942ea65" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">MOLAGAVITA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -25,521 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 16,190 ton<br>             <b>Captura:</b> 41,711 ton<br>             <b>IEC:</b> 47.4         </div>         </div>`)[0];
+                popup_4ffc42469bfeff44187ac8662e1a15d3.setContent(html_726e289e671c14e324d64d94d942ea65);
+            
+        
+
+        circle_marker_d967d854c9585f5c1f210cd16936347a.bindPopup(popup_4ffc42469bfeff44187ac8662e1a15d3)
+        ;
+
+        
+    
+    
+            circle_marker_d967d854c9585f5c1f210cd16936347a.bindTooltip(
+                `<div>
+                     MOLAGAVITA: -25,521 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c4be9e1cf1554961ae2315b4dbc6ab70 = L.circleMarker(
+                [6.45, -73.1167],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#acdb70ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_22586e0f1625f01d9504410b99021403 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7c92b6a60ab975cb69500c5fc8d5a953 = $(`<div id="html_7c92b6a60ab975cb69500c5fc8d5a953" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">OCAMONTE</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -11,631 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 10,626 ton<br>             <b>Captura:</b> 22,257 ton<br>             <b>IEC:</b> 51.3         </div>         </div>`)[0];
+                popup_22586e0f1625f01d9504410b99021403.setContent(html_7c92b6a60ab975cb69500c5fc8d5a953);
+            
+        
+
+        circle_marker_c4be9e1cf1554961ae2315b4dbc6ab70.bindPopup(popup_22586e0f1625f01d9504410b99021403)
+        ;
+
+        
+    
+    
+            circle_marker_c4be9e1cf1554961ae2315b4dbc6ab70.bindTooltip(
+                `<div>
+                     OCAMONTE: -11,631 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5e2b1d3baa5f1862fc94f38a27b831e5 = L.circleMarker(
+                [6.2667, -73.2833],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d364ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_159d8a95e847ce33017dab0ee4eab962 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ae53069049e3144627941b0d4282342a = $(`<div id="html_ae53069049e3144627941b0d4282342a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">OIBA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -44,479 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 55,789 ton<br>             <b>Captura:</b> 100,268 ton<br>             <b>IEC:</b> 42.1         </div>         </div>`)[0];
+                popup_159d8a95e847ce33017dab0ee4eab962.setContent(html_ae53069049e3144627941b0d4282342a);
+            
+        
+
+        circle_marker_5e2b1d3baa5f1862fc94f38a27b831e5.bindPopup(popup_159d8a95e847ce33017dab0ee4eab962)
+        ;
+
+        
+    
+    
+            circle_marker_5e2b1d3baa5f1862fc94f38a27b831e5.bindTooltip(
+                `<div>
+                     OIBA: -44,479 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_de97ee105b3f89b8f9a6b1b54b6650ef = L.circleMarker(
+                [6.3333, -72.8333],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30a253ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.449149141216763, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_60499448f1005845485b7be0fec3f30f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6a0cb95de69bf58379420532b66f653e = $(`<div id="html_6a0cb95de69bf58379420532b66f653e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">ONZAGA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -156,737 ton CO₂eq<br>             <b>Clasificación:</b> Sumidero<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 12,688 ton<br>             <b>Captura:</b> 169,425 ton<br>             <b>IEC:</b> 17.1         </div>         </div>`)[0];
+                popup_60499448f1005845485b7be0fec3f30f.setContent(html_6a0cb95de69bf58379420532b66f653e);
+            
+        
+
+        circle_marker_de97ee105b3f89b8f9a6b1b54b6650ef.bindPopup(popup_60499448f1005845485b7be0fec3f30f)
+        ;
+
+        
+    
+    
+            circle_marker_de97ee105b3f89b8f9a6b1b54b6650ef.bindTooltip(
+                `<div>
+                     ONZAGA: -156,737 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_11f7daf34b00b9bbbba4f6f72b2428d2 = L.circleMarker(
+                [6.4833, -73.4833],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b4df75ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_cb6922d1b0be8d30df18c66363281141 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0319ada2b675a5d1b0fcff186a305910 = $(`<div id="html_0319ada2b675a5d1b0fcff186a305910" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">PALMAR</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 1,169 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 5,557 ton<br>             <b>Captura:</b> 4,388 ton<br>             <b>IEC:</b> 54.9         </div>         </div>`)[0];
+                popup_cb6922d1b0be8d30df18c66363281141.setContent(html_0319ada2b675a5d1b0fcff186a305910);
+            
+        
+
+        circle_marker_11f7daf34b00b9bbbba4f6f72b2428d2.bindPopup(popup_cb6922d1b0be8d30df18c66363281141)
+        ;
+
+        
+    
+    
+            circle_marker_11f7daf34b00b9bbbba4f6f72b2428d2.bindTooltip(
+                `<div>
+                     PALMAR: 1,169 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7dbc583770cec33328f38e13b0dc40de = L.circleMarker(
+                [6.15, -73.3167],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b3df74ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_38258ed6f30597eb983cbaf6728ba682 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9f2702772b65194961ca5c3db8087fa4 = $(`<div id="html_9f2702772b65194961ca5c3db8087fa4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">PALMAS DEL SOCORRO</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 519 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 16,958 ton<br>             <b>Captura:</b> 16,439 ton<br>             <b>IEC:</b> 54.7         </div>         </div>`)[0];
+                popup_38258ed6f30597eb983cbaf6728ba682.setContent(html_9f2702772b65194961ca5c3db8087fa4);
+            
+        
+
+        circle_marker_7dbc583770cec33328f38e13b0dc40de.bindPopup(popup_38258ed6f30597eb983cbaf6728ba682)
+        ;
+
+        
+    
+    
+            circle_marker_7dbc583770cec33328f38e13b0dc40de.bindTooltip(
+                `<div>
+                     PALMAS DEL SOCORRO: 519 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0cb89503f5111113bfcce881d49de75c = L.circleMarker(
+                [6.4333, -73.1833],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b1dd73ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_eec26f6a189a75768951d6ac9fc65df9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9a8f985240c395aff5247a60d11187ff = $(`<div id="html_9a8f985240c395aff5247a60d11187ff" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">PARAMO</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -3,931 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 14,087 ton<br>             <b>Captura:</b> 18,018 ton<br>             <b>IEC:</b> 53.4         </div>         </div>`)[0];
+                popup_eec26f6a189a75768951d6ac9fc65df9.setContent(html_9a8f985240c395aff5247a60d11187ff);
+            
+        
+
+        circle_marker_0cb89503f5111113bfcce881d49de75c.bindPopup(popup_eec26f6a189a75768951d6ac9fc65df9)
+        ;
+
+        
+    
+    
+            circle_marker_0cb89503f5111113bfcce881d49de75c.bindTooltip(
+                `<div>
+                     PARAMO: -3,931 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ef8a5107ac4699bcc0052b390679c7b1 = L.circleMarker(
+                [6.9833, -73.05],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a5d86cff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_03ca27e10083ab3d35662ddd3e7feb3c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_64af6f5a3db69b9260c0969eb5b2bdb5 = $(`<div id="html_64af6f5a3db69b9260c0969eb5b2bdb5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">PIEDECUESTA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -24,287 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 102,292 ton<br>             <b>Captura:</b> 126,579 ton<br>             <b>IEC:</b> 47.7         </div>         </div>`)[0];
+                popup_03ca27e10083ab3d35662ddd3e7feb3c.setContent(html_64af6f5a3db69b9260c0969eb5b2bdb5);
+            
+        
+
+        circle_marker_ef8a5107ac4699bcc0052b390679c7b1.bindPopup(popup_03ca27e10083ab3d35662ddd3e7feb3c)
+        ;
+
+        
+    
+    
+            circle_marker_ef8a5107ac4699bcc0052b390679c7b1.bindTooltip(
+                `<div>
+                     PIEDECUESTA: -24,287 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8ebbdc5e9f8d29cb1c1f80655007510e = L.circleMarker(
+                [6.5333, -73.1833],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d8ef8aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_7174b99bd818c3cedf3c537426f14108 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b6a021c0bd3316972c3058127a04b3a8 = $(`<div id="html_b6a021c0bd3316972c3058127a04b3a8" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">PINCHOTE</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 62,206 ton CO₂eq<br>             <b>Clasificación:</b> Emisor<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 77,071 ton<br>             <b>Captura:</b> 14,865 ton<br>             <b>IEC:</b> 70.7         </div>         </div>`)[0];
+                popup_7174b99bd818c3cedf3c537426f14108.setContent(html_b6a021c0bd3316972c3058127a04b3a8);
+            
+        
+
+        circle_marker_8ebbdc5e9f8d29cb1c1f80655007510e.bindPopup(popup_7174b99bd818c3cedf3c537426f14108)
+        ;
+
+        
+    
+    
+            circle_marker_8ebbdc5e9f8d29cb1c1f80655007510e.bindTooltip(
+                `<div>
+                     PINCHOTE: 62,206 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c217c5ad9846789c00281e2b96fa7c49 = L.circleMarker(
+                [5.8833, -73.6833],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9dd467ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_9b4b863a467a9253d570539ae822dc9f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4fd124fd02978a89f409c1d8e52c6b3c = $(`<div id="html_4fd124fd02978a89f409c1d8e52c6b3c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">PUENTE NACIONAL</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -38,042 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 40,048 ton<br>             <b>Captura:</b> 78,091 ton<br>             <b>IEC:</b> 43.9         </div>         </div>`)[0];
+                popup_9b4b863a467a9253d570539ae822dc9f.setContent(html_4fd124fd02978a89f409c1d8e52c6b3c);
+            
+        
+
+        circle_marker_c217c5ad9846789c00281e2b96fa7c49.bindPopup(popup_9b4b863a467a9253d570539ae822dc9f)
+        ;
+
+        
+    
+    
+            circle_marker_c217c5ad9846789c00281e2b96fa7c49.bindTooltip(
+                `<div>
+                     PUENTE NACIONAL: -38,042 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d64cf817f606b41d69d5dc6ff7562719 = L.circleMarker(
+                [7.1833, -73.9],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e7f59eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.246479339691352, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_3f76cee75f04dfb7fccb6d18a7d68a76 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b83786de231bf023fc90762210116c24 = $(`<div id="html_b83786de231bf023fc90762210116c24" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">PUERTO PARRA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 108,697 ton CO₂eq<br>             <b>Clasificación:</b> Emisor<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 262,973 ton<br>             <b>Captura:</b> 154,276 ton<br>             <b>IEC:</b> 80.2         </div>         </div>`)[0];
+                popup_3f76cee75f04dfb7fccb6d18a7d68a76.setContent(html_b83786de231bf023fc90762210116c24);
+            
+        
+
+        circle_marker_d64cf817f606b41d69d5dc6ff7562719.bindPopup(popup_3f76cee75f04dfb7fccb6d18a7d68a76)
+        ;
+
+        
+    
+    
+            circle_marker_d64cf817f606b41d69d5dc6ff7562719.bindTooltip(
+                `<div>
+                     PUERTO PARRA: 108,697 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_81be1365dbd45d7dd8e5e4aa3b6c16aa = L.circleMarker(
+                [7.35, -73.9],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffefa3ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.800625663429894, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_b5829a92c4804b05333a2f8bdc00713e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cbccbebb179bd027f1e90aa76d6b06c3 = $(`<div id="html_cbccbebb179bd027f1e90aa76d6b06c3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">PUERTO WILCHES</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 252,009 ton CO₂eq<br>             <b>Clasificación:</b> Emisor<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 372,126 ton<br>             <b>Captura:</b> 120,116 ton<br>             <b>IEC:</b> 95.3         </div>         </div>`)[0];
+                popup_b5829a92c4804b05333a2f8bdc00713e.setContent(html_cbccbebb179bd027f1e90aa76d6b06c3);
+            
+        
+
+        circle_marker_81be1365dbd45d7dd8e5e4aa3b6c16aa.bindPopup(popup_b5829a92c4804b05333a2f8bdc00713e)
+        ;
+
+        
+    
+    
+            circle_marker_81be1365dbd45d7dd8e5e4aa3b6c16aa.bindTooltip(
+                `<div>
+                     PUERTO WILCHES: 252,009 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d42b92122c56db64c3e8323724e95bb = L.circleMarker(
+                [7.3833, -73.15],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3ec87ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_1ca26b23b72e58cd370afb209dbb6535 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_792268c4a0ee1f798cd835eec7fe8f59 = $(`<div id="html_792268c4a0ee1f798cd835eec7fe8f59" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">RIONEGRO</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 53,255 ton CO₂eq<br>             <b>Clasificación:</b> Emisor<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 302,098 ton<br>             <b>Captura:</b> 248,843 ton<br>             <b>IEC:</b> 68.6         </div>         </div>`)[0];
+                popup_1ca26b23b72e58cd370afb209dbb6535.setContent(html_792268c4a0ee1f798cd835eec7fe8f59);
+            
+        
+
+        circle_marker_4d42b92122c56db64c3e8323724e95bb.bindPopup(popup_1ca26b23b72e58cd370afb209dbb6535)
+        ;
+
+        
+    
+    
+            circle_marker_4d42b92122c56db64c3e8323724e95bb.bindTooltip(
+                `<div>
+                     RIONEGRO: 53,255 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d5efe5a1ff331fe8ac7f0aa62aa4ac0d = L.circleMarker(
+                [7.3833, -73.5],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff9b4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.172245927163297, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_7de4f2a9141a87d5ab2b128b7763ea94 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e4f308a75dda5886e117a0b45f9decc2 = $(`<div id="html_e4f308a75dda5886e117a0b45f9decc2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">SABANA DE TORRES</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 212,584 ton CO₂eq<br>             <b>Clasificación:</b> Emisor<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 455,560 ton<br>             <b>Captura:</b> 242,977 ton<br>             <b>IEC:</b> 92.9         </div>         </div>`)[0];
+                popup_7de4f2a9141a87d5ab2b128b7763ea94.setContent(html_e4f308a75dda5886e117a0b45f9decc2);
+            
+        
+
+        circle_marker_d5efe5a1ff331fe8ac7f0aa62aa4ac0d.bindPopup(popup_7de4f2a9141a87d5ab2b128b7763ea94)
+        ;
+
+        
+    
+    
+            circle_marker_d5efe5a1ff331fe8ac7f0aa62aa4ac0d.bindTooltip(
+                `<div>
+                     SABANA DE TORRES: 212,584 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d7f8512adf3f73be05a528ba1fba8a75 = L.circleMarker(
+                [6.3833, -72.8333],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9ad365ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_964a145670ba319f446dc7b52fc90fc1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c422bf227ee01b923be297e992a8a72d = $(`<div id="html_c422bf227ee01b923be297e992a8a72d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">SAN ANDRES</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -41,654 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 33,045 ton<br>             <b>Captura:</b> 74,699 ton<br>             <b>IEC:</b> 42.9         </div>         </div>`)[0];
+                popup_964a145670ba319f446dc7b52fc90fc1.setContent(html_c422bf227ee01b923be297e992a8a72d);
+            
+        
+
+        circle_marker_d7f8512adf3f73be05a528ba1fba8a75.bindPopup(popup_964a145670ba319f446dc7b52fc90fc1)
+        ;
+
+        
+    
+    
+            circle_marker_d7f8512adf3f73be05a528ba1fba8a75.bindTooltip(
+                `<div>
+                     SAN ANDRES: -41,654 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ecf2e9add653400c217a78708f5a5cf = L.circleMarker(
+                [6.0667, -73.2333],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#afdd72ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_9aad9c4d8b43e57a26964a9c6f258311 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a29ef79e0037bb8c4985e56536a9eb8b = $(`<div id="html_a29ef79e0037bb8c4985e56536a9eb8b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">SAN BENITO</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -6,508 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 7,369 ton<br>             <b>Captura:</b> 13,878 ton<br>             <b>IEC:</b> 52.7         </div>         </div>`)[0];
+                popup_9aad9c4d8b43e57a26964a9c6f258311.setContent(html_a29ef79e0037bb8c4985e56536a9eb8b);
+            
+        
+
+        circle_marker_4ecf2e9add653400c217a78708f5a5cf.bindPopup(popup_9aad9c4d8b43e57a26964a9c6f258311)
+        ;
+
+        
+    
+    
+            circle_marker_4ecf2e9add653400c217a78708f5a5cf.bindTooltip(
+                `<div>
+                     SAN BENITO: -6,508 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c5d6d768b188715b34cb12597ce9874 = L.circleMarker(
+                [6.55, -73.1333],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bfe47bff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_8495ad5b90a5a9614f2e933a007c987f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_48f484062d85066b47d4ab91b845eebd = $(`<div id="html_48f484062d85066b47d4ab91b845eebd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">SAN GIL</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 19,379 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 49,552 ton<br>             <b>Captura:</b> 30,173 ton<br>             <b>IEC:</b> 59.9         </div>         </div>`)[0];
+                popup_8495ad5b90a5a9614f2e933a007c987f.setContent(html_48f484062d85066b47d4ab91b845eebd);
+            
+        
+
+        circle_marker_0c5d6d768b188715b34cb12597ce9874.bindPopup(popup_8495ad5b90a5a9614f2e933a007c987f)
+        ;
+
+        
+    
+    
+            circle_marker_0c5d6d768b188715b34cb12597ce9874.bindTooltip(
+                `<div>
+                     SAN GIL: 19,379 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a2ed3be78e5d3570ef0b7e3fec5fcbbc = L.circleMarker(
+                [6.45, -72.8],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9ad365ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_e977f6f923c65f523cc2b3444191f038 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1de355d9f2ab4c041d7f7e751aea47d6 = $(`<div id="html_1de355d9f2ab4c041d7f7e751aea47d6" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">SAN JOAQUIN</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -42,977 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 6,335 ton<br>             <b>Captura:</b> 49,313 ton<br>             <b>IEC:</b> 42.5         </div>         </div>`)[0];
+                popup_e977f6f923c65f523cc2b3444191f038.setContent(html_1de355d9f2ab4c041d7f7e751aea47d6);
+            
+        
+
+        circle_marker_a2ed3be78e5d3570ef0b7e3fec5fcbbc.bindPopup(popup_e977f6f923c65f523cc2b3444191f038)
+        ;
+
+        
+    
+    
+            circle_marker_a2ed3be78e5d3570ef0b7e3fec5fcbbc.bindTooltip(
+                `<div>
+                     SAN JOAQUIN: -42,977 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9fed2c79eec58738ade4f42b761d8fd4 = L.circleMarker(
+                [6.6167, -72.7],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b2de74ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_397437ca5c6c26c8831b9ef2f9990452 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1e174fc7d93fd221393c9af68e45ff77 = $(`<div id="html_1e174fc7d93fd221393c9af68e45ff77" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">SAN JOSE DE MIRANDA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -1,645 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 9,722 ton<br>             <b>Captura:</b> 11,366 ton<br>             <b>IEC:</b> 54.1         </div>         </div>`)[0];
+                popup_397437ca5c6c26c8831b9ef2f9990452.setContent(html_1e174fc7d93fd221393c9af68e45ff77);
+            
+        
+
+        circle_marker_9fed2c79eec58738ade4f42b761d8fd4.bindPopup(popup_397437ca5c6c26c8831b9ef2f9990452)
+        ;
+
+        
+    
+    
+            circle_marker_9fed2c79eec58738ade4f42b761d8fd4.bindTooltip(
+                `<div>
+                     SAN JOSE DE MIRANDA: -1,645 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8dd0c6fa468c982b0d976fe97de47c27 = L.circleMarker(
+                [6.3333, -72.6667],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aadb6fff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_e5583d310d9b4c86ed8a6953612a711e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_165a9b6ff1b685785e2589bdf13ffada = $(`<div id="html_165a9b6ff1b685785e2589bdf13ffada" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">SAN MIGUEL</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -14,702 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 9,572 ton<br>             <b>Captura:</b> 24,274 ton<br>             <b>IEC:</b> 50.4         </div>         </div>`)[0];
+                popup_e5583d310d9b4c86ed8a6953612a711e.setContent(html_165a9b6ff1b685785e2589bdf13ffada);
+            
+        
+
+        circle_marker_8dd0c6fa468c982b0d976fe97de47c27.bindPopup(popup_e5583d310d9b4c86ed8a6953612a711e)
+        ;
+
+        
+    
+    
+            circle_marker_8dd0c6fa468c982b0d976fe97de47c27.bindTooltip(
+                `<div>
+                     SAN MIGUEL: -14,702 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5841add79b17afcadd1ff9c9584584c8 = L.circleMarker(
+                [6.8833, -73.4167],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a3d76aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_30fa8e4e879b56fec0f5df8ecaee523b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a3b47e3e54e111865f80aa3a98253eff = $(`<div id="html_a3b47e3e54e111865f80aa3a98253eff" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">SAN VICENTE DE CHUCURI</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -27,569 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 321,396 ton<br>             <b>Captura:</b> 348,965 ton<br>             <b>IEC:</b> 46.8         </div>         </div>`)[0];
+                popup_30fa8e4e879b56fec0f5df8ecaee523b.setContent(html_a3b47e3e54e111865f80aa3a98253eff);
+            
+        
+
+        circle_marker_5841add79b17afcadd1ff9c9584584c8.bindPopup(popup_30fa8e4e879b56fec0f5df8ecaee523b)
+        ;
+
+        
+    
+    
+            circle_marker_5841add79b17afcadd1ff9c9584584c8.bindTooltip(
+                `<div>
+                     SAN VICENTE DE CHUCURI: -27,569 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_00f913eb110ee5df6ecfa84ee61b6257 = L.circleMarker(
+                [6.0, -73.5167],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8bcd5fff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_20d57583b7332d0e6a595318a8339412 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1b79fd4dc5c0dcc3fcfccd0a6f02e558 = $(`<div id="html_1b79fd4dc5c0dcc3fcfccd0a6f02e558" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">SANTA BARBARA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -63,147 ton CO₂eq<br>             <b>Clasificación:</b> Sumidero<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 4,625 ton<br>             <b>Captura:</b> 67,771 ton<br>             <b>IEC:</b> 37.1         </div>         </div>`)[0];
+                popup_20d57583b7332d0e6a595318a8339412.setContent(html_1b79fd4dc5c0dcc3fcfccd0a6f02e558);
+            
+        
+
+        circle_marker_00f913eb110ee5df6ecfa84ee61b6257.bindPopup(popup_20d57583b7332d0e6a595318a8339412)
+        ;
+
+        
+    
+    
+            circle_marker_00f913eb110ee5df6ecfa84ee61b6257.bindTooltip(
+                `<div>
+                     SANTA BARBARA: -63,147 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fa188933db3038b9b9220fa12c4a01c1 = L.circleMarker(
+                [6.2167, -73.7],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7fc75dff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.062628308293511, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_45df4fb3c075f71d854b7f7d44898836 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c2bc63b12f5ec7b4597df819da821c3a = $(`<div id="html_c2bc63b12f5ec7b4597df819da821c3a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">SANTA HELENA DEL OPON</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -75,939 ton CO₂eq<br>             <b>Clasificación:</b> Sumidero<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 73,348 ton<br>             <b>Captura:</b> 149,287 ton<br>             <b>IEC:</b> 33.8         </div>         </div>`)[0];
+                popup_45df4fb3c075f71d854b7f7d44898836.setContent(html_c2bc63b12f5ec7b4597df819da821c3a);
+            
+        
+
+        circle_marker_fa188933db3038b9b9220fa12c4a01c1.bindPopup(popup_45df4fb3c075f71d854b7f7d44898836)
+        ;
+
+        
+    
+    
+            circle_marker_fa188933db3038b9b9220fa12c4a01c1.bindTooltip(
+                `<div>
+                     SANTA HELENA DEL OPON: -75,939 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_574468a3120660ec223b6a3d289ac9ae = L.circleMarker(
+                [6.4333, -73.35],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2ec87ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_1cb65a45ccf4a5e5a307b3ccc7b40f03 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_00f922b8db89b029d171d4c578e95cc2 = $(`<div id="html_00f922b8db89b029d171d4c578e95cc2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">SIMACOTA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 51,997 ton CO₂eq<br>             <b>Clasificación:</b> Emisor<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 317,977 ton<br>             <b>Captura:</b> 265,980 ton<br>             <b>IEC:</b> 68.3         </div>         </div>`)[0];
+                popup_1cb65a45ccf4a5e5a307b3ccc7b40f03.setContent(html_00f922b8db89b029d171d4c578e95cc2);
+            
+        
+
+        circle_marker_574468a3120660ec223b6a3d289ac9ae.bindPopup(popup_1cb65a45ccf4a5e5a307b3ccc7b40f03)
+        ;
+
+        
+    
+    
+            circle_marker_574468a3120660ec223b6a3d289ac9ae.bindTooltip(
+                `<div>
+                     SIMACOTA: 51,997 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f7d145466aa3f415e2dd6c2f98788cbe = L.circleMarker(
+                [6.4667, -73.2667],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b0dd72ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_6661cde1c10208f43605efc3e95a45c7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9c60b312d068e7c5c889f2e7760de17c = $(`<div id="html_9c60b312d068e7c5c889f2e7760de17c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">SOCORRO</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -5,388 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 34,034 ton<br>             <b>Captura:</b> 39,422 ton<br>             <b>IEC:</b> 53.0         </div>         </div>`)[0];
+                popup_6661cde1c10208f43605efc3e95a45c7.setContent(html_9c60b312d068e7c5c889f2e7760de17c);
+            
+        
+
+        circle_marker_f7d145466aa3f415e2dd6c2f98788cbe.bindPopup(popup_6661cde1c10208f43605efc3e95a45c7)
+        ;
+
+        
+    
+    
+            circle_marker_f7d145466aa3f415e2dd6c2f98788cbe.bindTooltip(
+                `<div>
+                     SOCORRO: -5,388 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_63a328b58af40d695a1150defa78e353 = L.circleMarker(
+                [6.0833, -73.45],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#86ca5eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_1f5f3d2e3d37ac1d5223dc98a7a21450 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f0d6f3d6b90b50945e49b61e3cf96454 = $(`<div id="html_f0d6f3d6b90b50945e49b61e3cf96454" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">SUAITA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -68,578 ton CO₂eq<br>             <b>Clasificación:</b> Sumidero<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 40,769 ton<br>             <b>Captura:</b> 109,347 ton<br>             <b>IEC:</b> 35.7         </div>         </div>`)[0];
+                popup_1f5f3d2e3d37ac1d5223dc98a7a21450.setContent(html_f0d6f3d6b90b50945e49b61e3cf96454);
+            
+        
+
+        circle_marker_63a328b58af40d695a1150defa78e353.bindPopup(popup_1f5f3d2e3d37ac1d5223dc98a7a21450)
+        ;
+
+        
+    
+    
+            circle_marker_63a328b58af40d695a1150defa78e353.bindTooltip(
+                `<div>
+                     SUAITA: -68,578 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_46605bbe4b6345f9a3b9d6cd00f4c1cc = L.circleMarker(
+                [6.05, -73.5],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2fa253ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.482629147446705, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_2c48faf26fd5f7a704c54fdf3c9a08f6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_979f5d731591867f56f727ea644293f9 = $(`<div id="html_979f5d731591867f56f727ea644293f9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">SUCRE</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -157,239 ton CO₂eq<br>             <b>Clasificación:</b> Sumidero<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 152,304 ton<br>             <b>Captura:</b> 309,543 ton<br>             <b>IEC:</b> 17.0         </div>         </div>`)[0];
+                popup_2c48faf26fd5f7a704c54fdf3c9a08f6.setContent(html_979f5d731591867f56f727ea644293f9);
+            
+        
+
+        circle_marker_46605bbe4b6345f9a3b9d6cd00f4c1cc.bindPopup(popup_2c48faf26fd5f7a704c54fdf3c9a08f6)
+        ;
+
+        
+    
+    
+            circle_marker_46605bbe4b6345f9a3b9d6cd00f4c1cc.bindTooltip(
+                `<div>
+                     SUCRE: -157,239 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a37a38511b2f24bfc57cf459e56636a7 = L.circleMarker(
+                [7.3667, -72.9833],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#65bb5aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.839599916501291, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_b5e8ae57c35c6a2f3564a8807568f8c9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_34c76788b0eca2e4b1dec18981aa1771 = $(`<div id="html_34c76788b0eca2e4b1dec18981aa1771" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">SURATA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -102,594 ton CO₂eq<br>             <b>Clasificación:</b> Sumidero<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 16,277 ton<br>             <b>Captura:</b> 118,871 ton<br>             <b>IEC:</b> 27.5         </div>         </div>`)[0];
+                popup_b5e8ae57c35c6a2f3564a8807568f8c9.setContent(html_34c76788b0eca2e4b1dec18981aa1771);
+            
+        
+
+        circle_marker_a37a38511b2f24bfc57cf459e56636a7.bindPopup(popup_b5e8ae57c35c6a2f3564a8807568f8c9)
+        ;
+
+        
+    
+    
+            circle_marker_a37a38511b2f24bfc57cf459e56636a7.bindTooltip(
+                `<div>
+                     SURATA: -102,594 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e757a6c53d4be60b3d8551112e859fd = L.circleMarker(
+                [7.2167, -72.9667],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9dd567ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_ee923e46a38e09c91a4eba1b66195d02 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4f32ac3556051f44bcbe56c382476580 = $(`<div id="html_4f32ac3556051f44bcbe56c382476580" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">TONA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -37,302 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Agrícola-Ganadero<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 19,925 ton<br>             <b>Captura:</b> 57,227 ton<br>             <b>IEC:</b> 44.1         </div>         </div>`)[0];
+                popup_ee923e46a38e09c91a4eba1b66195d02.setContent(html_4f32ac3556051f44bcbe56c382476580);
+            
+        
+
+        circle_marker_9e757a6c53d4be60b3d8551112e859fd.bindPopup(popup_ee923e46a38e09c91a4eba1b66195d02)
+        ;
+
+        
+    
+    
+            circle_marker_9e757a6c53d4be60b3d8551112e859fd.bindTooltip(
+                `<div>
+                     TONA: -37,302 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_093e770e5bce5bdc87847360580d97eb = L.circleMarker(
+                [6.4333, -73.15],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#addc70ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_a5a2098901e81287e3550bdc2938ce01 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_821caa1c086a689909d5c9640a036ad9 = $(`<div id="html_821caa1c086a689909d5c9640a036ad9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">VALLE DE SAN JOSE</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -10,815 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 15,474 ton<br>             <b>Captura:</b> 26,289 ton<br>             <b>IEC:</b> 51.5         </div>         </div>`)[0];
+                popup_a5a2098901e81287e3550bdc2938ce01.setContent(html_821caa1c086a689909d5c9640a036ad9);
+            
+        
+
+        circle_marker_093e770e5bce5bdc87847360580d97eb.bindPopup(popup_a5a2098901e81287e3550bdc2938ce01)
+        ;
+
+        
+    
+    
+            circle_marker_093e770e5bce5bdc87847360580d97eb.bindTooltip(
+                `<div>
+                     VALLE DE SAN JOSE: -10,815 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_37115bb2e3c43ca56301ef1adcc3aa42 = L.circleMarker(
+                [6.0167, -73.6833],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d364ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_96d308d94caa3fd4ff1d7a7bc1052cad = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7649c1b4a6706c165aa411c97dca0a26 = $(`<div id="html_7649c1b4a6706c165aa411c97dca0a26" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">VELEZ</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -44,664 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 93,130 ton<br>             <b>Captura:</b> 137,794 ton<br>             <b>IEC:</b> 42.1         </div>         </div>`)[0];
+                popup_96d308d94caa3fd4ff1d7a7bc1052cad.setContent(html_7649c1b4a6706c165aa411c97dca0a26);
+            
+        
+
+        circle_marker_37115bb2e3c43ca56301ef1adcc3aa42.bindPopup(popup_96d308d94caa3fd4ff1d7a7bc1052cad)
+        ;
+
+        
+    
+    
+            circle_marker_37115bb2e3c43ca56301ef1adcc3aa42.bindTooltip(
+                `<div>
+                     VELEZ: -44,664 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9400479d39aa7847f85a51cb317a7925 = L.circleMarker(
+                [7.3, -72.8833],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bce279ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_bf188aec9ef1ec2b852ef28f92a095b0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2a7ed561e628c33ec453cf32e6370169 = $(`<div id="html_2a7ed561e628c33ec453cf32e6370169" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">VETAS</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 14,381 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 26,562 ton<br>             <b>Captura:</b> 12,181 ton<br>             <b>IEC:</b> 58.5         </div>         </div>`)[0];
+                popup_bf188aec9ef1ec2b852ef28f92a095b0.setContent(html_2a7ed561e628c33ec453cf32e6370169);
+            
+        
+
+        circle_marker_9400479d39aa7847f85a51cb317a7925.bindPopup(popup_bf188aec9ef1ec2b852ef28f92a095b0)
+        ;
+
+        
+    
+    
+            circle_marker_9400479d39aa7847f85a51cb317a7925.bindTooltip(
+                `<div>
+                     VETAS: 14,381 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6cc4e96ed7f08154d939cc6acbd4ffda = L.circleMarker(
+                [6.6667, -73.1833],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bfe47bff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_15d858cd60bcb1a2c466573c8b612e4a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_522c6a8c419bc5b350be15b4390acc42 = $(`<div id="html_522c6a8c419bc5b350be15b4390acc42" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">VILLANUEVA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> 20,147 ton CO₂eq<br>             <b>Clasificación:</b> Emisor<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 28,959 ton<br>             <b>Captura:</b> 8,812 ton<br>             <b>IEC:</b> 60.1         </div>         </div>`)[0];
+                popup_15d858cd60bcb1a2c466573c8b612e4a.setContent(html_522c6a8c419bc5b350be15b4390acc42);
+            
+        
+
+        circle_marker_6cc4e96ed7f08154d939cc6acbd4ffda.bindPopup(popup_15d858cd60bcb1a2c466573c8b612e4a)
+        ;
+
+        
+    
+    
+            circle_marker_6cc4e96ed7f08154d939cc6acbd4ffda.bindTooltip(
+                `<div>
+                     VILLANUEVA: 20,147 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_190df3d5e19c106428d60f770e0e0b4e = L.circleMarker(
+                [6.8167, -73.2667],
+                {"bubblingMouseEvents": true, "color": "#333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#96d163ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+        
+    
+        var popup_6efc45eef16cf5a4c99f9e9d31df1641 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e931887cc92f9fed09c14f2795d1b79f = $(`<div id="html_e931887cc92f9fed09c14f2795d1b79f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 12px; width: 200px;">             <b style="font-size: 14px;">ZAPATOCA</b><br>             <hr style="margin: 5px 0;">             <b>Balance:</b> -49,132 ton CO₂eq<br>             <b>Clasificación:</b> Equilibrio<br>             <b>Perfil:</b> Mixto-Transición<br>             <hr style="margin: 5px 0;">             <b>Emisiones:</b> 35,743 ton<br>             <b>Captura:</b> 84,875 ton<br>             <b>IEC:</b> 40.9         </div>         </div>`)[0];
+                popup_6efc45eef16cf5a4c99f9e9d31df1641.setContent(html_e931887cc92f9fed09c14f2795d1b79f);
+            
+        
+
+        circle_marker_190df3d5e19c106428d60f770e0e0b4e.bindPopup(popup_6efc45eef16cf5a4c99f9e9d31df1641)
+        ;
+
+        
+    
+    
+            circle_marker_190df3d5e19c106428d60f770e0e0b4e.bindTooltip(
+                `<div>
+                     ZAPATOCA: -49,132 ton CO₂eq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+    var color_map_4e123f3083eaf05f9388527749fbf81f = {};
+
+    
+    color_map_4e123f3083eaf05f9388527749fbf81f.color = d3.scale.threshold()
+              .domain([-179277.76832246123, -177812.4469822712, -176347.1256420812, -174881.80430189118, -173416.48296170117, -171951.16162151116, -170485.84028132114, -169020.51894113113, -167555.19760094112, -166089.87626075113, -164624.55492056112, -163159.2335803711, -161693.9122401811, -160228.59089999108, -158763.26955980106, -157297.94821961105, -155832.62687942103, -154367.30553923102, -152901.984199041, -151436.662858851, -149971.34151866098, -148506.02017847096, -147040.69883828095, -145575.37749809097, -144110.05615790095, -142644.73481771094, -141179.41347752092, -139714.0921373309, -138248.7707971409, -136783.44945695088, -135318.12811676087, -133852.80677657085, -132387.48543638084, -130922.16409619083, -129456.84275600081, -127991.5214158108, -126526.20007562079, -125060.87873543079, -123595.55739524077, -122130.23605505076, -120664.91471486076, -119199.59337467073, -117734.27203448072, -116268.95069429072, -114803.6293541007, -113338.30801391069, -111872.98667372068, -110407.66533353068, -108942.34399334065, -107477.02265315063, -106011.70131296062, -104546.3799727706, -103081.05863258059, -101615.73729239058, -100150.41595220058, -98685.09461201057, -97219.77327182055, -95754.45193163054, -94289.13059144052, -92823.80925125051, -91358.48791106051, -89893.1665708705, -88427.84523068048, -86962.52389049047, -85497.20255030046, -84031.88121011044, -82566.55986992044, -81101.23852973043, -79635.91718954041, -78170.5958493504, -76705.27450916039, -75239.95316897037, -73774.63182878036, -72309.31048859036, -70843.98914840035, -69378.66780821033, -67913.34646802032, -66448.0251278303, -64982.70378764029, -63517.38244745029, -62052.06110726028, -60586.73976707025, -59121.418426880235, -57656.09708669022, -56190.77574650021, -54725.45440631021, -53260.133066120194, -51794.81172593018, -50329.490385740166, -48864.16904555015, -47398.84770536015, -45933.52636517014, -44468.205024980125, -43002.88368479011, -41537.56234460013, -40072.24100441008, -38606.91966422007, -37141.598324030056, -35676.27698384004, -34210.95564365003, -32745.634303460014, -31280.31296327003, -29814.991623079986, -28349.67028289, -26884.34894269996, -25419.027602509974, -23953.70626231993, -22488.384922129946, -21023.063581939932, -19557.74224174992, -18092.420901559904, -16627.09956136989, -15161.778221179877, -13696.456880989892, -12231.135540799849, -10765.814200609864, -9300.492860419821, -7835.1715202298365, -6369.8501800397935, -4904.528839849809, -3439.207499659795, -1973.886159469781, -508.5648192797671, 956.7565209102468, 2422.0778611002606, 3887.3992012902745, 5352.720541480288, 6818.041881670273, 8283.363221860316, 9748.68456205033, 11214.005902240344, 12679.327242430358, 14144.648582620342, 15609.969922810385, 17075.29126300037, 18540.612603190413, 20005.933943380398, 21471.25528357044, 22936.576623760426, 24401.89796395044, 25867.219304140453, 27332.540644330467, 28797.86198452048, 30263.183324710495, 31728.50466490051, 33193.82600509052, 34659.14734528051, 36124.46868547055, 37589.790025660535, 39055.11136585058, 40520.43270604056, 41985.75404623058, 43451.07538642059, 44916.396726610605, 46381.71806680062, 47847.03940699063, 49312.360747180646, 50777.68208737066, 52243.003427560645, 53708.32476775069, 55173.64610794067, 56638.967448130716, 58104.28878832073, 59569.610128510714, 61034.93146870076, 62500.25280889074, 63965.574149080785, 65430.89548927077, 66896.21682946081, 68361.5381696508, 69826.85950984081, 71292.18085003083, 72757.50219022084, 74222.82353041085, 75688.14487060087, 77153.46621079088, 78618.7875509809, 80084.10889117088, 81549.43023136092, 83014.7515715509, 84480.07291174092, 85945.39425193093, 87410.71559212095, 88876.03693231096, 90341.35827250098, 91806.67961269099, 93272.000952881, 94737.32229307102, 96202.64363326097, 97667.96497345105, 99133.28631364106, 100598.60765383107, 102063.92899402109, 103529.2503342111, 104994.57167440112, 106459.89301459113, 107925.21435478114, 109390.5356949711, 110855.85703516117, 112321.17837535118, 113786.4997155412, 115251.82105573115, 116717.14239592117, 118182.46373611124, 119647.78507630125, 121113.10641649121, 122578.42775668122, 124043.74909687124, 125509.07043706131, 126974.39177725127, 128439.71311744128, 129905.0344576313, 131370.35579782136, 132835.67713801132, 134300.99847820133, 135766.31981839135, 137231.64115858136, 138696.96249877138, 140162.2838389614, 141627.6051791514, 143092.92651934142, 144558.24785953137, 146023.56919972145, 147488.89053991146, 148954.21188010147, 150419.5332202915, 151884.85456048144, 153350.17590067151, 154815.49724086153, 156280.81858105154, 157746.1399212415, 159211.46126143157, 160676.78260162158, 162142.1039418116, 163607.42528200155, 165072.74662219157, 166538.06796238164, 168003.38930257165, 169468.7106427616, 170934.03198295162, 172399.35332314164, 173864.6746633317, 175329.99600352166, 176795.31734371168, 178260.6386839017, 179725.9600240917, 181191.28136428172, 182656.60270447173, 184121.92404466175, 185587.24538485176, 187052.56672504178, 188517.8880652318, 189983.2094054218, 191448.53074561182, 192913.85208580177, 194379.17342599184, 195844.49476618186, 197309.81610637187, 198775.1374465619, 200240.45878675184, 201705.7801269419, 203171.10146713193, 204636.42280732194, 206101.7441475119, 207567.0654877019, 209032.38682789198, 210497.708168082, 211963.02950827195, 213428.35084846197, 214893.67218865204, 216358.99352884205, 217824.314869032, 219289.63620922202, 220754.95754941204, 222220.2788896021, 223685.60022979206, 225150.92156998208, 226616.2429101721, 228081.5642503621, 229546.88559055212, 231012.20693074213, 232477.52827093215, 233942.84961112216, 235408.17095131212, 236873.4922915022, 238338.8136316922, 239804.13497188222, 241269.45631207217, 242734.77765226224, 244200.09899245226, 245665.42033264227, 247130.7416728323, 248596.06301302224, 250061.3843532123, 251526.70569340233, 252992.02703359234, 254457.3483737823, 255922.6697139723, 257387.99105416238, 258853.3123943524, 260318.63373454235, 261783.95507473237, 263249.2764149224, 264714.59775511245, 266179.9190953024, 267645.2404354924, 269110.56177568244, 270575.8831158725, 272041.20445606246, 273506.5257962525, 274971.8471364425, 276437.1684766325, 277902.4898168225, 279367.81115701253, 280833.13249720255, 282298.45383739256, 283763.7751775825, 285229.0965177726, 286694.4178579626, 288159.7391981526, 289625.0605383426, 291090.3818785326, 292555.70321872266, 294021.0245589127, 295486.3458991027, 296951.66723929264, 298416.98857948266, 299882.3099196727, 301347.63125986274, 302812.9526000527, 304278.2739402427, 305743.5952804328, 307208.9166206228, 308674.23796081275, 310139.55930100277, 311604.8806411928, 313070.20198138285, 314535.5233215728, 316000.8446617628, 317466.16600195284, 318931.48734214285, 320396.80868233286, 321862.1300225229, 323327.4513627129, 324792.7727029029, 326258.09404309286, 327723.41538328293, 329188.73672347295, 330654.05806366296, 332119.3794038529, 333584.700744043, 335050.022084233, 336515.343424423, 337980.66476461303, 339445.986104803, 340911.30744499306, 342376.6287851831, 343841.9501253731, 345307.27146556304, 346772.59280575305, 348237.91414594307, 349703.2354861331, 351168.5568263231, 352633.8781665131, 354099.1995067031, 355564.52084689314, 357029.84218708315, 358495.16352727317, 359960.4848674632, 361425.8062076532, 362891.1275478432, 364356.4488880332, 365821.77022822323, 367287.09156841325, 368752.41290860326, 370217.7342487933, 371683.0555889832, 373148.3769291733, 374613.6982693633, 376079.01960955333, 377544.34094974335, 379009.66228993336, 380474.9836301234, 381940.3049703134, 383405.6263105034, 384870.9476506933, 386336.2689908834, 387801.59033107344, 389266.91167126346, 390732.23301145347, 392197.5543516435, 393662.8756918335, 395128.1970320235, 396593.5183722134, 398058.8397124034, 399524.16105259344, 400989.48239278357, 402454.8037329736, 403920.1250731636, 405385.4464133536, 406850.7677535436, 408316.0890937335, 409781.41043392353, 411246.73177411355, 412712.05311430356, 414177.3744544937, 415642.6957946837, 417108.0171348737, 418573.33847506373, 420038.65981525363, 421503.98115544365, 422969.30249563366, 424434.6238358237, 425899.9451760137, 427365.2665162037, 428830.58785639383, 430295.90919658385, 431761.23053677386, 433226.55187696376, 434691.87321715377, 436157.1945573438, 437622.5158975338, 439087.8372377238, 440553.1585779138, 442018.47991810396, 443483.80125829397, 444949.12259848387, 446414.4439386739, 447879.7652788639, 449345.0866190539, 450810.4079592439, 452275.72929943394, 453741.05063962395, 455206.3719798141, 456671.693320004, 458137.014660194, 459602.336000384, 461067.657340574, 462532.97868076403, 463998.30002095405, 465463.62136114406, 466928.9427013341, 468394.264041524, 469859.5853817141, 471324.9067219041, 472790.22806209413, 474255.54940228414, 475720.87074247416, 477186.1920826642, 478651.5134228542, 480116.8347630442, 481582.1561032341, 483047.4774434241, 484512.79878361424, 485978.12012380426, 487443.44146399427, 488908.7628041843, 490374.0841443743, 491839.4054845643, 493304.7268247542, 494770.0481649442, 496235.36950513424, 497700.69084532437, 499166.0121855144, 500631.3335257044, 502096.6548658944, 503561.9762060844, 505027.2975462743, 506492.61888646433, 507957.94022665435, 509423.26156684436, 510888.5829070344, 512353.9042472245, 513819.2255874145, 515284.54692760453, 516749.86826779443, 518215.18960798444, 519680.51094817446, 521145.8322883645, 522611.1536285545, 524076.4749687445, 525541.7963089347, 527007.1176491247, 528472.4389893147, 529937.7603295045, 531403.0816696945, 532868.4030098845, 534333.7243500745, 535799.0456902646, 537264.3670304546, 538729.6883706446, 540195.0097108348, 541660.3310510246, 543125.6523912146, 544590.9737314046, 546056.2950715946, 547521.6164117847, 548986.9377519747, 550452.2590921647, 551917.5804323547])
+              .range(['#1a9850ff', '#1b9950ff', '#1c9950ff', '#1e9a50ff', '#1f9b51ff', '#219b51ff', '#229c51ff', '#249d51ff', '#259d51ff', '#279e52ff', '#289f52ff', '#299f52ff', '#2ba052ff', '#2ca152ff', '#2ea153ff', '#2fa253ff', '#31a353ff', '#32a353ff', '#33a453ff', '#35a553ff', '#36a554ff', '#38a654ff', '#39a754ff', '#3ba754ff', '#3ca854ff', '#3ea955ff', '#3fa955ff', '#40aa55ff', '#42ab55ff', '#43ab55ff', '#45ac56ff', '#46ad56ff', '#48ad56ff', '#49ae56ff', '#4aaf56ff', '#4caf57ff', '#4db057ff', '#4fb157ff', '#50b157ff', '#52b257ff', '#53b358ff', '#54b358ff', '#56b458ff', '#57b558ff', '#59b558ff', '#5ab659ff', '#5cb759ff', '#5db759ff', '#5fb859ff', '#60b959ff', '#61b959ff', '#63ba5aff', '#64bb5aff', '#66bb5aff', '#67bc5aff', '#69bd5aff', '#6abd5bff', '#6bbe5bff', '#6dbf5bff', '#6ebf5bff', '#70c05bff', '#71c15cff', '#73c15cff', '#74c25cff', '#76c35cff', '#77c35cff', '#78c45dff', '#7ac55dff', '#7bc55dff', '#7dc65dff', '#7ec75dff', '#80c75eff', '#81c85eff', '#82c95eff', '#84c95eff', '#85ca5eff', '#87cb5eff', '#88cb5fff', '#8acc5fff', '#8bcd5fff', '#8dcd5fff', '#8ece5fff', '#8fcf60ff', '#91cf60ff', '#92d060ff', '#93d061ff', '#94d061ff', '#94d162ff', '#95d162ff', '#96d263ff', '#97d263ff', '#98d264ff', '#99d364ff', '#9ad365ff', '#9ad365ff', '#9bd466ff', '#9cd467ff', '#9dd567ff', '#9ed568ff', '#9fd568ff', '#a0d669ff', '#a1d669ff', '#a1d76aff', '#a2d76aff', '#a3d76bff', '#a4d86bff', '#a5d86cff', '#a6d96cff', '#a7d96dff', '#a8d96dff', '#a8da6eff', '#a9da6eff', '#aada6fff', '#abdb6fff', '#acdb70ff', '#addc70ff', '#aedc71ff', '#aedc71ff', '#afdd72ff', '#b0dd72ff', '#b1de73ff', '#b2de74ff', '#b3de74ff', '#b4df75ff', '#b5df75ff', '#b5df76ff', '#b6e076ff', '#b7e077ff', '#b8e177ff', '#b9e178ff', '#bae178ff', '#bbe279ff', '#bce279ff', '#bce37aff', '#bde37aff', '#bee37bff', '#bfe47bff', '#c0e47cff', '#c1e47cff', '#c2e57dff', '#c2e57dff', '#c3e67eff', '#c4e67eff', '#c5e67fff', '#c6e77fff', '#c7e780ff', '#c8e880ff', '#c9e881ff', '#c9e882ff', '#cae982ff', '#cbe983ff', '#ccea83ff', '#cdea84ff', '#ceea84ff', '#cfeb85ff', '#d0eb85ff', '#d0eb86ff', '#d1ec86ff', '#d2ec87ff', '#d3ed87ff', '#d4ed88ff', '#d5ed88ff', '#d6ee89ff', '#d6ee89ff', '#d7ef8aff', '#d8ef8aff', '#d9ef8bff', '#daf08bff', '#daf08cff', '#dbf08dff', '#dbf08dff', '#dbf08eff', '#dcf18fff', '#dcf18fff', '#ddf190ff', '#ddf190ff', '#def191ff', '#def192ff', '#dff292ff', '#dff293ff', '#e0f294ff', '#e0f294ff', '#e1f295ff', '#e1f396ff', '#e1f396ff', '#e2f397ff', '#e2f397ff', '#e3f398ff', '#e3f499ff', '#e4f499ff', '#e4f49aff', '#e5f49bff', '#e5f49bff', '#e6f59cff', '#e6f59cff', '#e7f59dff', '#e7f59eff', '#e7f59eff', '#e8f69fff', '#e8f6a0ff', '#e9f6a0ff', '#e9f6a1ff', '#eaf6a1ff', '#eaf7a2ff', '#ebf7a3ff', '#ebf7a3ff', '#ecf7a4ff', '#ecf7a5ff', '#ecf7a5ff', '#edf8a6ff', '#edf8a6ff', '#eef8a7ff', '#eef8a8ff', '#eff8a8ff', '#eff9a9ff', '#f0f9aaff', '#f0f9aaff', '#f1f9abff', '#f1f9abff', '#f2faacff', '#f2faadff', '#f2faadff', '#f3faaeff', '#f3faafff', '#f4fbafff', '#f4fbb0ff', '#f5fbb0ff', '#f5fbb1ff', '#f6fbb2ff', '#f6fcb2ff', '#f7fcb3ff', '#f7fcb4ff', '#f7fcb4ff', '#f8fcb5ff', '#f8fdb6ff', '#f9fdb6ff', '#f9fdb7ff', '#fafdb7ff', '#fafdb8ff', '#fbfdb9ff', '#fbfeb9ff', '#fcfebaff', '#fcfebbff', '#fdfebbff', '#fdfebcff', '#fdffbcff', '#feffbdff', '#feffbeff', '#ffffbeff', '#ffffbfff', '#ffffbfff', '#ffffbeff', '#ffffbeff', '#fffebdff', '#fffebcff', '#fffdbcff', '#fffdbbff', '#fffdbbff', '#fffcbaff', '#fffcb9ff', '#fffcb9ff', '#fffbb8ff', '#fffbb7ff', '#fffab7ff', '#fffab6ff', '#fffab6ff', '#fff9b5ff', '#fff9b4ff', '#fff9b4ff', '#fff8b3ff', '#fff8b2ff', '#fff7b2ff', '#fff7b1ff', '#fff7b0ff', '#fff6b0ff', '#fff6afff', '#fff6afff', '#fff5aeff', '#fff5adff', '#fff4adff', '#fff4acff', '#fff4abff', '#fff3abff', '#fff3aaff', '#fff3aaff', '#fff2a9ff', '#fff2a8ff', '#fff1a8ff', '#fff1a7ff', '#fff1a6ff', '#fff0a6ff', '#fff0a5ff', '#fff0a5ff', '#ffefa4ff', '#ffefa3ff', '#ffeea3ff', '#ffeea2ff', '#ffeea1ff', '#ffeda1ff', '#ffeda0ff', '#ffeda0ff', '#ffec9fff', '#ffec9eff', '#ffeb9eff', '#ffeb9dff', '#ffeb9cff', '#ffea9cff', '#ffea9bff', '#ffea9bff', '#ffe99aff', '#ffe999ff', '#ffe899ff', '#ffe898ff', '#ffe897ff', '#ffe797ff', '#ffe796ff', '#ffe796ff', '#ffe695ff', '#ffe694ff', '#ffe594ff', '#ffe593ff', '#ffe592ff', '#ffe492ff', '#ffe491ff', '#ffe490ff', '#ffe390ff', '#ffe38fff', '#ffe28fff', '#ffe28eff', '#ffe28dff', '#ffe18dff', '#ffe18cff', '#ffe18bff', '#fee08bff', '#fedf8aff', '#fede8aff', '#fedd89ff', '#fedc88ff', '#fedb88ff', '#feda87ff', '#fed987ff', '#fed886ff', '#fed785ff', '#fed685ff', '#fed584ff', '#fed484ff', '#fed383ff', '#fed282ff', '#fed182ff', '#fed081ff', '#fecf81ff', '#fece80ff', '#fecd7fff', '#fecc7fff', '#fecb7eff', '#feca7eff', '#fec97dff', '#fec87cff', '#fec77cff', '#fec67bff', '#fec57bff', '#fec47aff', '#fec379ff', '#fec279ff', '#fec178ff', '#fec078ff', '#febf77ff', '#febe76ff', '#febd76ff', '#febc75ff', '#febb75ff', '#feba74ff', '#feb973ff', '#feb873ff', '#fdb772ff', '#fdb671ff', '#fdb571ff', '#fdb470ff', '#fdb370ff', '#fdb26fff', '#fdb16eff', '#fdb06eff', '#fdaf6dff', '#fdae6dff', '#fdad6cff', '#fdac6bff', '#fdab6bff', '#fdaa6aff', '#fda96aff', '#fda869ff', '#fda768ff', '#fda668ff', '#fda567ff', '#fda467ff', '#fda366ff', '#fda265ff', '#fda165ff', '#fda064ff', '#fd9f64ff', '#fd9e63ff', '#fd9d62ff', '#fd9c62ff', '#fd9b61ff', '#fd9a61ff', '#fd9960ff', '#fd985fff', '#fd975fff', '#fd965eff', '#fd955eff', '#fd945dff', '#fd935cff', '#fd925cff', '#fd915bff', '#fd905bff', '#fd8f5aff', '#fd8e59ff', '#fc8d59ff', '#fc8c58ff', '#fc8b58ff', '#fb8957ff', '#fb8856ff', '#fa8756ff', '#fa8655ff', '#f98555ff', '#f98454ff', '#f88353ff', '#f88253ff', '#f88152ff', '#f77f52ff', '#f77e51ff', '#f67d50ff', '#f67c50ff', '#f57b4fff', '#f57a4eff', '#f4794eff', '#f4784dff', '#f3764dff', '#f3754cff', '#f3744bff', '#f2734bff', '#f2724aff', '#f1714aff', '#f17049ff', '#f06f48ff', '#f06d48ff', '#ef6c47ff', '#ef6b47ff', '#ef6a46ff', '#ee6945ff', '#ee6845ff', '#ed6744ff', '#ed6644ff', '#ec6443ff', '#ec6342ff', '#eb6242ff', '#eb6141ff', '#eb6041ff', '#ea5f40ff', '#ea5e3fff', '#e95d3fff', '#e95b3eff', '#e85a3eff', '#e8593dff', '#e7583cff', '#e7573cff', '#e7563bff', '#e6553bff', '#e6543aff', '#e55239ff', '#e55139ff', '#e45038ff', '#e44f38ff', '#e34e37ff', '#e34d36ff', '#e34c36ff', '#e24b35ff', '#e24a35ff', '#e14834ff', '#e14733ff', '#e04633ff', '#e04532ff', '#df4432ff', '#df4331ff', '#de4230ff', '#de4130ff', '#de3f2fff', '#dd3e2eff', '#dd3d2eff', '#dc3c2dff', '#dc3b2dff', '#db3a2cff', '#db392bff', '#da382bff', '#da362aff', '#da352aff', '#d93429ff', '#d93328ff', '#d83228ff', '#d83127ff', '#d73027ff']);
+    
+
+    color_map_4e123f3083eaf05f9388527749fbf81f.x = d3.scale.linear()
+              .domain([-179277.76832246123, 551917.5804323547])
+              .range([0, 450 - 50]);
+
+    color_map_4e123f3083eaf05f9388527749fbf81f.legend = L.control({position: 'topright'});
+    color_map_4e123f3083eaf05f9388527749fbf81f.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_4e123f3083eaf05f9388527749fbf81f.legend.addTo(map_9543395d03fb619b3d05f2f4242bffb1);
+
+    color_map_4e123f3083eaf05f9388527749fbf81f.xAxis = d3.svg.axis()
+        .scale(color_map_4e123f3083eaf05f9388527749fbf81f.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([-179277.76832246123, -57411.87686332523, 64454.01459581076, 186319.90605494683, 308185.79751408275, 430051.6889732187, 551917.5804323549]);
+
+    color_map_4e123f3083eaf05f9388527749fbf81f.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_4e123f3083eaf05f9388527749fbf81f.g = color_map_4e123f3083eaf05f9388527749fbf81f.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_4e123f3083eaf05f9388527749fbf81f.g.selectAll("rect")
+        .data(color_map_4e123f3083eaf05f9388527749fbf81f.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_4e123f3083eaf05f9388527749fbf81f.x(color_map_4e123f3083eaf05f9388527749fbf81f.color.domain()[i - 1]) : color_map_4e123f3083eaf05f9388527749fbf81f.x.range()[0],
+            x1: i < color_map_4e123f3083eaf05f9388527749fbf81f.color.domain().length ? color_map_4e123f3083eaf05f9388527749fbf81f.x(color_map_4e123f3083eaf05f9388527749fbf81f.color.domain()[i]) : color_map_4e123f3083eaf05f9388527749fbf81f.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_4e123f3083eaf05f9388527749fbf81f.g.call(color_map_4e123f3083eaf05f9388527749fbf81f.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Balance de Carbono (ton CO\u2082eq)");
+</script>
+</html>

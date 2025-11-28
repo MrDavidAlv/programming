@@ -1,0 +1,3659 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "AGUADA",
+        "codMunicipio": 68013,
+        "balanceCarbono": -14352.794747274433,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 2562.953495521216,
+        "capturaBosques": 16915.74824279565,
+        "IEC": 50.52033272306227,
+        "latitud": 6.25,
+        "longitud": -73.5167
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.5967,
+              6.17
+            ],
+            [
+              -73.4367,
+              6.17
+            ],
+            [
+              -73.4367,
+              6.33
+            ],
+            [
+              -73.5967,
+              6.33
+            ],
+            [
+              -73.5967,
+              6.17
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "ALBANIA",
+        "codMunicipio": 68020,
+        "balanceCarbono": -41099.92717887188,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 13742.974506396524,
+        "capturaBosques": 54842.9016852684,
+        "IEC": 43.06151353541901,
+        "latitud": 6.4333,
+        "longitud": -73.3167
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.3967,
+              6.3533
+            ],
+            [
+              -73.2367,
+              6.3533
+            ],
+            [
+              -73.2367,
+              6.5133
+            ],
+            [
+              -73.3967,
+              6.5133
+            ],
+            [
+              -73.3967,
+              6.3533
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "ARATOCA",
+        "codMunicipio": 68051,
+        "balanceCarbono": 203269.57986713748,
+        "clasificacion": "Emisor",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 236941.08097226697,
+        "capturaBosques": 33671.5011051295,
+        "IEC": 92.15046973902513,
+        "latitud": 6.6917,
+        "longitud": -73.0167
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.0967,
+              6.6117
+            ],
+            [
+              -72.9367,
+              6.6117
+            ],
+            [
+              -72.9367,
+              6.7717
+            ],
+            [
+              -73.0967,
+              6.7717
+            ],
+            [
+              -73.0967,
+              6.6117
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "BARBOSA",
+        "codMunicipio": 68077,
+        "balanceCarbono": 2890.798631481901,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 11472.938677902586,
+        "capturaBosques": 8582.140046420685,
+        "IEC": 55.33761943371067,
+        "latitud": 5.9333,
+        "longitud": -73.6167
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.69669999999999,
+              5.8533
+            ],
+            [
+              -73.5367,
+              5.8533
+            ],
+            [
+              -73.5367,
+              6.0133
+            ],
+            [
+              -73.69669999999999,
+              6.0133
+            ],
+            [
+              -73.69669999999999,
+              5.8533
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "BARICHARA",
+        "codMunicipio": 68079,
+        "balanceCarbono": -5393.578248038568,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 18518.91115759704,
+        "capturaBosques": 23912.48940563561,
+        "IEC": 53.03013855601334,
+        "latitud": 6.6333,
+        "longitud": -73.2167
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.2967,
+              6.5533
+            ],
+            [
+              -73.1367,
+              6.5533
+            ],
+            [
+              -73.1367,
+              6.7133
+            ],
+            [
+              -73.2967,
+              6.7133
+            ],
+            [
+              -73.2967,
+              6.5533
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "BARRANCABERMEJA",
+        "codMunicipio": 68081,
+        "balanceCarbono": 551917.5804323547,
+        "clasificacion": "Emisor",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 791615.7900399112,
+        "capturaBosques": 239698.2096075564,
+        "IEC": 99.8300112266469,
+        "latitud": 7.0653,
+        "longitud": -73.8547
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.93469999999999,
+              6.9853
+            ],
+            [
+              -73.7747,
+              6.9853
+            ],
+            [
+              -73.7747,
+              7.1453
+            ],
+            [
+              -73.93469999999999,
+              7.1453
+            ],
+            [
+              -73.93469999999999,
+              6.9853
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "BETULIA",
+        "codMunicipio": 68092,
+        "balanceCarbono": -19251.45667071831,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 110195.31469510825,
+        "capturaBosques": 129446.77136582656,
+        "IEC": 49.14611676365693,
+        "latitud": 7.0833,
+        "longitud": -73.2833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.3633,
+              7.0033
+            ],
+            [
+              -73.2033,
+              7.0033
+            ],
+            [
+              -73.2033,
+              7.1633000000000004
+            ],
+            [
+              -73.3633,
+              7.1633000000000004
+            ],
+            [
+              -73.3633,
+              7.0033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "BOLIVAR",
+        "codMunicipio": 68101,
+        "balanceCarbono": 238767.8463046648,
+        "clasificacion": "Emisor",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 368214.61767049134,
+        "capturaBosques": 129446.77136582656,
+        "IEC": 94.59014039854642,
+        "latitud": 6.0,
+        "longitud": -73.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.38,
+              5.92
+            ],
+            [
+              -73.22,
+              5.92
+            ],
+            [
+              -73.22,
+              6.08
+            ],
+            [
+              -73.38,
+              6.08
+            ],
+            [
+              -73.38,
+              5.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "BUCARAMANGA",
+        "codMunicipio": 68001,
+        "balanceCarbono": 128973.2076865016,
+        "clasificacion": "Emisor",
+        "perfil": "Urbano-Industrial",
+        "emisionesTotales": 169369.64724923528,
+        "capturaBosques": 40396.43956273366,
+        "IEC": 83.60622534243929,
+        "latitud": 7.1254,
+        "longitud": -73.1198
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.1998,
+              7.0454
+            ],
+            [
+              -73.0398,
+              7.0454
+            ],
+            [
+              -73.0398,
+              7.2054
+            ],
+            [
+              -73.1998,
+              7.2054
+            ],
+            [
+              -73.1998,
+              7.0454
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "CABRERA",
+        "codMunicipio": 68121,
+        "balanceCarbono": 1397.6394044807166,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 17124.655557803977,
+        "capturaBosques": 15727.01615332326,
+        "IEC": 54.9231270292329,
+        "latitud": 6.5833,
+        "longitud": -73.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.28,
+              6.5033
+            ],
+            [
+              -73.12,
+              6.5033
+            ],
+            [
+              -73.12,
+              6.6633000000000004
+            ],
+            [
+              -73.28,
+              6.6633000000000004
+            ],
+            [
+              -73.28,
+              6.5033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "CALIFORNIA",
+        "codMunicipio": 68132,
+        "balanceCarbono": -12940.001805653485,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 2537.717681238096,
+        "capturaBosques": 15477.71948689158,
+        "IEC": 50.91660733776704,
+        "latitud": 7.35,
+        "longitud": -72.9667
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.0467,
+              7.27
+            ],
+            [
+              -72.8867,
+              7.27
+            ],
+            [
+              -72.8867,
+              7.43
+            ],
+            [
+              -73.0467,
+              7.43
+            ],
+            [
+              -73.0467,
+              7.27
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "CAPITANEJO",
+        "codMunicipio": 68147,
+        "balanceCarbono": -9627.26808841162,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 7163.816708275132,
+        "capturaBosques": 16791.08479668675,
+        "IEC": 51.84525781744487,
+        "latitud": 6.5167,
+        "longitud": -72.6833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.7633,
+              6.4367
+            ],
+            [
+              -72.6033,
+              6.4367
+            ],
+            [
+              -72.6033,
+              6.5967
+            ],
+            [
+              -72.7633,
+              6.5967
+            ],
+            [
+              -72.7633,
+              6.4367
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "CARCASI",
+        "codMunicipio": 68152,
+        "balanceCarbono": -30273.135235824306,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 21442.0787629824,
+        "capturaBosques": 51715.2139988067,
+        "IEC": 46.0620785437311,
+        "latitud": 6.6167,
+        "longitud": -72.6167
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.69669999999999,
+              6.5367
+            ],
+            [
+              -72.5367,
+              6.5367
+            ],
+            [
+              -72.5367,
+              6.6967
+            ],
+            [
+              -72.69669999999999,
+              6.6967
+            ],
+            [
+              -72.69669999999999,
+              6.5367
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "CEPITA",
+        "codMunicipio": 68160,
+        "balanceCarbono": -11372.213554834128,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 7844.461540827809,
+        "capturaBosques": 19216.675095661936,
+        "IEC": 51.356219694299234,
+        "latitud": 6.7333,
+        "longitud": -72.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.98,
+              6.6533
+            ],
+            [
+              -72.82000000000001,
+              6.6533
+            ],
+            [
+              -72.82000000000001,
+              6.8133
+            ],
+            [
+              -72.98,
+              6.8133
+            ],
+            [
+              -72.98,
+              6.6533
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "CERRITO",
+        "codMunicipio": 68162,
+        "balanceCarbono": -6639.063905968229,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 23319.526823019467,
+        "capturaBosques": 29958.590728987696,
+        "IEC": 52.68185950367824,
+        "latitud": 6.3667,
+        "longitud": -72.6667
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.7467,
+              6.2867
+            ],
+            [
+              -72.58670000000001,
+              6.2867
+            ],
+            [
+              -72.58670000000001,
+              6.4467
+            ],
+            [
+              -72.7467,
+              6.4467
+            ],
+            [
+              -72.7467,
+              6.2867
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "CHARALA",
+        "codMunicipio": 68167,
+        "balanceCarbono": -80897.11004048651,
+        "clasificacion": "Sumidero",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 67227.71147361917,
+        "capturaBosques": 148124.8215141057,
+        "IEC": 32.6085144315585,
+        "latitud": 6.2833,
+        "longitud": -73.1333
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.2133,
+              6.2033
+            ],
+            [
+              -73.05330000000001,
+              6.2033
+            ],
+            [
+              -73.05330000000001,
+              6.3633
+            ],
+            [
+              -73.2133,
+              6.3633
+            ],
+            [
+              -73.2133,
+              6.2033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "CHARTA",
+        "codMunicipio": 68169,
+        "balanceCarbono": -33207.88773349034,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 10540.76111864844,
+        "capturaBosques": 43748.64885213878,
+        "IEC": 45.24497549775261,
+        "latitud": 7.2833,
+        "longitud": -72.9833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.0633,
+              7.2033
+            ],
+            [
+              -72.9033,
+              7.2033
+            ],
+            [
+              -72.9033,
+              7.3633
+            ],
+            [
+              -73.0633,
+              7.3633
+            ],
+            [
+              -73.0633,
+              7.2033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "CHIMA",
+        "codMunicipio": 68176,
+        "balanceCarbono": -42215.23686489729,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 22342.360450900254,
+        "capturaBosques": 64557.597315797546,
+        "IEC": 42.75490960545247,
+        "latitud": 6.3833,
+        "longitud": -73.5333
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.6133,
+              6.3033
+            ],
+            [
+              -73.4533,
+              6.3033
+            ],
+            [
+              -73.4533,
+              6.4633
+            ],
+            [
+              -73.6133,
+              6.4633
+            ],
+            [
+              -73.6133,
+              6.3033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "CHIPATA",
+        "codMunicipio": 68179,
+        "balanceCarbono": -6334.628706610862,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 11837.427948176368,
+        "capturaBosques": 18172.05665478723,
+        "IEC": 52.76701508219266,
+        "latitud": 6.5667,
+        "longitud": -72.7333
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.8133,
+              6.4867
+            ],
+            [
+              -72.6533,
+              6.4867
+            ],
+            [
+              -72.6533,
+              6.6467
+            ],
+            [
+              -72.8133,
+              6.6467
+            ],
+            [
+              -72.8133,
+              6.4867
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "CIMITARRA",
+        "codMunicipio": 68190,
+        "balanceCarbono": 370443.16166814894,
+        "clasificacion": "Emisor",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 894654.7810669395,
+        "capturaBosques": 524211.6193987905,
+        "IEC": 98.71183805283528,
+        "latitud": 6.3167,
+        "longitud": -73.9333
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.0133,
+              6.2367
+            ],
+            [
+              -73.8533,
+              6.2367
+            ],
+            [
+              -73.8533,
+              6.3967
+            ],
+            [
+              -74.0133,
+              6.3967
+            ],
+            [
+              -74.0133,
+              6.2367
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "CONCEPCION",
+        "codMunicipio": 68207,
+        "balanceCarbono": -19669.199986548003,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 21965.15959871976,
+        "capturaBosques": 41634.35958526776,
+        "IEC": 49.02895811737376,
+        "latitud": 6.3833,
+        "longitud": -72.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.78,
+              6.3033
+            ],
+            [
+              -72.62,
+              6.3033
+            ],
+            [
+              -72.62,
+              6.4633
+            ],
+            [
+              -72.78,
+              6.4633
+            ],
+            [
+              -72.78,
+              6.3033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "CONFINES",
+        "codMunicipio": 68209,
+        "balanceCarbono": -2407.71580948311,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 17154.56345405448,
+        "capturaBosques": 19562.27926353759,
+        "IEC": 53.86382014167433,
+        "latitud": 6.35,
+        "longitud": -73.1167
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.19669999999999,
+              6.27
+            ],
+            [
+              -73.0367,
+              6.27
+            ],
+            [
+              -73.0367,
+              6.43
+            ],
+            [
+              -73.19669999999999,
+              6.43
+            ],
+            [
+              -73.19669999999999,
+              6.27
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "CONTRATACION",
+        "codMunicipio": 68211,
+        "balanceCarbono": -28318.93548260125,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 18052.5994207079,
+        "capturaBosques": 46371.53490330915,
+        "IEC": 46.60737687700187,
+        "latitud": 6.2833,
+        "longitud": -73.4333
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.5133,
+              6.2033
+            ],
+            [
+              -73.3533,
+              6.2033
+            ],
+            [
+              -73.3533,
+              6.3633
+            ],
+            [
+              -73.5133,
+              6.3633
+            ],
+            [
+              -73.5133,
+              6.2033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "COROMORO",
+        "codMunicipio": 68217,
+        "balanceCarbono": -179277.76832246123,
+        "clasificacion": "Sumidero",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 33248.76985313661,
+        "capturaBosques": 212526.53817559785,
+        "IEC": 13.824166543191666,
+        "latitud": 6.35,
+        "longitud": -72.9333
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.0133,
+              6.27
+            ],
+            [
+              -72.8533,
+              6.27
+            ],
+            [
+              -72.8533,
+              6.43
+            ],
+            [
+              -73.0133,
+              6.43
+            ],
+            [
+              -73.0133,
+              6.27
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "CURITI",
+        "codMunicipio": 68229,
+        "balanceCarbono": 382461.7629915977,
+        "clasificacion": "Emisor",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 433490.8151148242,
+        "capturaBosques": 51029.0521232265,
+        "IEC": 98.8725364965306,
+        "latitud": 6.6167,
+        "longitud": -72.9833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.0633,
+              6.5367
+            ],
+            [
+              -72.9033,
+              6.5367
+            ],
+            [
+              -72.9033,
+              6.6967
+            ],
+            [
+              -73.0633,
+              6.6967
+            ],
+            [
+              -73.0633,
+              6.5367
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "EL CARMEN DE CHUCURI",
+        "codMunicipio": 68235,
+        "balanceCarbono": -130149.84891533888,
+        "clasificacion": "Sumidero",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 217010.3219587504,
+        "capturaBosques": 347160.17087408924,
+        "IEC": 21.777862076750548,
+        "latitud": 6.7,
+        "longitud": -73.5167
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.5967,
+              6.62
+            ],
+            [
+              -73.4367,
+              6.62
+            ],
+            [
+              -73.4367,
+              6.78
+            ],
+            [
+              -73.5967,
+              6.78
+            ],
+            [
+              -73.5967,
+              6.62
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "EL GUACAMAYO",
+        "codMunicipio": 68245,
+        "balanceCarbono": -37173.81667111391,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 14094.891139984546,
+        "capturaBosques": 51268.70781109845,
+        "IEC": 44.14490804180284,
+        "latitud": 6.3833,
+        "longitud": -73.6167
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.69669999999999,
+              6.3033
+            ],
+            [
+              -73.5367,
+              6.3033
+            ],
+            [
+              -73.5367,
+              6.4633
+            ],
+            [
+              -73.69669999999999,
+              6.4633
+            ],
+            [
+              -73.69669999999999,
+              6.3033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "EL PENON",
+        "codMunicipio": 68250,
+        "balanceCarbono": -42925.80382775197,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 25975.817154997123,
+        "capturaBosques": 68901.6209827491,
+        "IEC": 42.55985967219479,
+        "latitud": 6.0333,
+        "longitud": -73.95
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.03,
+              5.9533
+            ],
+            [
+              -73.87,
+              5.9533
+            ],
+            [
+              -73.87,
+              6.1133
+            ],
+            [
+              -74.03,
+              6.1133
+            ],
+            [
+              -74.03,
+              5.9533
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "EL PLAYON",
+        "codMunicipio": 68255,
+        "balanceCarbono": -119840.55429261643,
+        "clasificacion": "Sumidero",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 56830.47258644821,
+        "capturaBosques": 176671.02687906465,
+        "IEC": 23.812840274544687,
+        "latitud": 7.4833,
+        "longitud": -73.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.28,
+              7.4033
+            ],
+            [
+              -73.12,
+              7.4033
+            ],
+            [
+              -73.12,
+              7.5633
+            ],
+            [
+              -73.28,
+              7.5633
+            ],
+            [
+              -73.28,
+              7.4033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "ENCINO",
+        "codMunicipio": 68264,
+        "balanceCarbono": -121364.21795033172,
+        "clasificacion": "Sumidero",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 18848.376895280715,
+        "capturaBosques": 140212.59484561245,
+        "IEC": 23.50402343224224,
+        "latitud": 6.15,
+        "longitud": -73.1333
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.2133,
+              6.07
+            ],
+            [
+              -73.05330000000001,
+              6.07
+            ],
+            [
+              -73.05330000000001,
+              6.23
+            ],
+            [
+              -73.2133,
+              6.23
+            ],
+            [
+              -73.2133,
+              6.07
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "ENCISO",
+        "codMunicipio": 68266,
+        "balanceCarbono": 2572.114213399578,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 22910.9464523433,
+        "capturaBosques": 20338.832238943723,
+        "IEC": 55.24921474462035,
+        "latitud": 6.2333,
+        "longitud": -72.65
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.73,
+              6.1533
+            ],
+            [
+              -72.57000000000001,
+              6.1533
+            ],
+            [
+              -72.57000000000001,
+              6.3133
+            ],
+            [
+              -72.73,
+              6.3133
+            ],
+            [
+              -72.73,
+              6.1533
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "FLORIAN",
+        "codMunicipio": 68271,
+        "balanceCarbono": -42054.04585068791,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 22674.124374379688,
+        "capturaBosques": 64728.1702250676,
+        "IEC": 42.799187968100654,
+        "latitud": 7.065,
+        "longitud": -73.0867
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.16669999999999,
+              6.985
+            ],
+            [
+              -73.0067,
+              6.985
+            ],
+            [
+              -73.0067,
+              7.1450000000000005
+            ],
+            [
+              -73.16669999999999,
+              7.1450000000000005
+            ],
+            [
+              -73.16669999999999,
+              6.985
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "FLORIDABLANCA",
+        "codMunicipio": 68276,
+        "balanceCarbono": 35340.69372634502,
+        "clasificacion": "Emisor",
+        "perfil": "Urbano-Industrial",
+        "emisionesTotales": 61836.32448102122,
+        "capturaBosques": 26495.6307546762,
+        "IEC": 64.0716116312206,
+        "latitud": 5.8333,
+        "longitud": -73.95
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.03,
+              5.7533
+            ],
+            [
+              -73.87,
+              5.7533
+            ],
+            [
+              -73.87,
+              5.9133000000000004
+            ],
+            [
+              -74.03,
+              5.9133000000000004
+            ],
+            [
+              -74.03,
+              5.7533
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "GALAN",
+        "codMunicipio": 68296,
+        "balanceCarbono": -48862.18512244377,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 17032.325860264686,
+        "capturaBosques": 65894.51098270845,
+        "IEC": 40.93991523096787,
+        "latitud": 6.65,
+        "longitud": -73.0833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.16329999999999,
+              6.57
+            ],
+            [
+              -73.0033,
+              6.57
+            ],
+            [
+              -73.0033,
+              6.73
+            ],
+            [
+              -73.16329999999999,
+              6.73
+            ],
+            [
+              -73.16329999999999,
+              6.57
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "GAMBITA",
+        "codMunicipio": 68298,
+        "balanceCarbono": -159992.5788462997,
+        "clasificacion": "Sumidero",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 38680.836240140015,
+        "capturaBosques": 198673.4150864397,
+        "IEC": 16.60958526790365,
+        "latitud": 6.05,
+        "longitud": -73.35
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.42999999999999,
+              5.97
+            ],
+            [
+              -73.27,
+              5.97
+            ],
+            [
+              -73.27,
+              6.13
+            ],
+            [
+              -73.42999999999999,
+              6.13
+            ],
+            [
+              -73.42999999999999,
+              5.97
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "GIRON",
+        "codMunicipio": 68307,
+        "balanceCarbono": 84986.86461326852,
+        "clasificacion": "Emisor",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 197259.6299203772,
+        "capturaBosques": 112272.76530710864,
+        "IEC": 75.68712885551751,
+        "latitud": 7.0667,
+        "longitud": -73.1667
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.2467,
+              6.9867
+            ],
+            [
+              -73.08670000000001,
+              6.9867
+            ],
+            [
+              -73.08670000000001,
+              7.1467
+            ],
+            [
+              -73.2467,
+              7.1467
+            ],
+            [
+              -73.2467,
+              6.9867
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "GUACA",
+        "codMunicipio": 68318,
+        "balanceCarbono": -32371.632500113017,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 22890.18851961873,
+        "capturaBosques": 55261.82101973175,
+        "IEC": 45.4775668264784,
+        "latitud": 6.8833,
+        "longitud": -72.85
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.92999999999999,
+              6.8033
+            ],
+            [
+              -72.77,
+              6.8033
+            ],
+            [
+              -72.77,
+              6.9633
+            ],
+            [
+              -72.92999999999999,
+              6.9633
+            ],
+            [
+              -72.92999999999999,
+              6.8033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "GUADALUPE",
+        "codMunicipio": 68320,
+        "balanceCarbono": -17418.162066902103,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 28908.2493153585,
+        "capturaBosques": 46326.4113822606,
+        "IEC": 49.66036907714631,
+        "latitud": 6.25,
+        "longitud": -72.65
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.73,
+              6.17
+            ],
+            [
+              -72.57000000000001,
+              6.17
+            ],
+            [
+              -72.57000000000001,
+              6.33
+            ],
+            [
+              -72.73,
+              6.33
+            ],
+            [
+              -72.73,
+              6.17
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "GUAPOTA",
+        "codMunicipio": 68322,
+        "balanceCarbono": 951.7472892916704,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 20193.604747669226,
+        "capturaBosques": 19241.85745837755,
+        "IEC": 54.799214675444944,
+        "latitud": 6.3333,
+        "longitud": -73.0833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.16329999999999,
+              6.2533
+            ],
+            [
+              -73.0033,
+              6.2533
+            ],
+            [
+              -73.0033,
+              6.4133000000000004
+            ],
+            [
+              -73.16329999999999,
+              6.4133000000000004
+            ],
+            [
+              -73.16329999999999,
+              6.2533
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "GUAVATA",
+        "codMunicipio": 68324,
+        "balanceCarbono": -17232.062445418294,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 11231.959903530103,
+        "capturaBosques": 28464.0223489484,
+        "IEC": 49.71257719868844,
+        "latitud": 5.95,
+        "longitud": -73.6833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.7633,
+              5.87
+            ],
+            [
+              -73.6033,
+              5.87
+            ],
+            [
+              -73.6033,
+              6.03
+            ],
+            [
+              -73.7633,
+              6.03
+            ],
+            [
+              -73.7633,
+              5.87
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "GUEPSA",
+        "codMunicipio": 68327,
+        "balanceCarbono": -1239.4581901413069,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 4429.198115588949,
+        "capturaBosques": 5668.656305730256,
+        "IEC": 54.18944753690476,
+        "latitud": 6.0333,
+        "longitud": -73.5667
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.6467,
+              5.9533
+            ],
+            [
+              -73.4867,
+              5.9533
+            ],
+            [
+              -73.4867,
+              6.1133
+            ],
+            [
+              -73.6467,
+              6.1133
+            ],
+            [
+              -73.6467,
+              5.9533
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "HATO",
+        "codMunicipio": 68344,
+        "balanceCarbono": -55917.56329246577,
+        "clasificacion": "Sumidero",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 10817.135196271627,
+        "capturaBosques": 66734.6984887374,
+        "IEC": 39.04014278458759,
+        "latitud": 6.55,
+        "longitud": -73.1333
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.2133,
+              6.47
+            ],
+            [
+              -73.05330000000001,
+              6.47
+            ],
+            [
+              -73.05330000000001,
+              6.63
+            ],
+            [
+              -73.2133,
+              6.63
+            ],
+            [
+              -73.2133,
+              6.47
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "JESUS MARIA",
+        "codMunicipio": 68368,
+        "balanceCarbono": -20333.761291924384,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 9162.905475825042,
+        "capturaBosques": 29496.666767749422,
+        "IEC": 48.84260037137047,
+        "latitud": 5.9,
+        "longitud": -73.7667
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.8467,
+              5.82
+            ],
+            [
+              -73.6867,
+              5.82
+            ],
+            [
+              -73.6867,
+              5.98
+            ],
+            [
+              -73.8467,
+              5.98
+            ],
+            [
+              -73.8467,
+              5.82
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "JORDAN",
+        "codMunicipio": 68370,
+        "balanceCarbono": -6937.388129551689,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 2543.088667596155,
+        "capturaBosques": 9480.476797147843,
+        "IEC": 52.598398124370746,
+        "latitud": 6.7,
+        "longitud": -73.0833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.16329999999999,
+              6.62
+            ],
+            [
+              -73.0033,
+              6.62
+            ],
+            [
+              -73.0033,
+              6.78
+            ],
+            [
+              -73.16329999999999,
+              6.78
+            ],
+            [
+              -73.16329999999999,
+              6.62
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "LA BELLEZA",
+        "codMunicipio": 68377,
+        "balanceCarbono": -34587.519840200024,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 96703.8851172116,
+        "capturaBosques": 131291.40495741164,
+        "IEC": 44.861710602989845,
+        "latitud": 5.8667,
+        "longitud": -73.9667
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.0467,
+              5.7867
+            ],
+            [
+              -73.8867,
+              5.7867
+            ],
+            [
+              -73.8867,
+              5.9467
+            ],
+            [
+              -74.0467,
+              5.9467
+            ],
+            [
+              -74.0467,
+              5.7867
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "LA PAZ",
+        "codMunicipio": 68397,
+        "balanceCarbono": -74025.8375047391,
+        "clasificacion": "Sumidero",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 25397.99353816496,
+        "capturaBosques": 99423.83104290406,
+        "IEC": 34.32519052333674,
+        "latitud": 6.1833,
+        "longitud": -73.5833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.66329999999999,
+              6.1033
+            ],
+            [
+              -73.5033,
+              6.1033
+            ],
+            [
+              -73.5033,
+              6.2633
+            ],
+            [
+              -73.66329999999999,
+              6.2633
+            ],
+            [
+              -73.66329999999999,
+              6.1033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "LANDAZURI",
+        "codMunicipio": 68385,
+        "balanceCarbono": 75319.52507213698,
+        "clasificacion": "Emisor",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 285116.85411061527,
+        "capturaBosques": 209797.3290384783,
+        "IEC": 73.63562915944757,
+        "latitud": 6.2167,
+        "longitud": -73.8167
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.8967,
+              6.1367
+            ],
+            [
+              -73.7367,
+              6.1367
+            ],
+            [
+              -73.7367,
+              6.2967
+            ],
+            [
+              -73.8967,
+              6.2967
+            ],
+            [
+              -73.8967,
+              6.1367
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "LEBRIJA",
+        "codMunicipio": 68406,
+        "balanceCarbono": -36066.921657018815,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 110504.25572843514,
+        "capturaBosques": 146571.17738545395,
+        "IEC": 44.45140762650559,
+        "latitud": 7.1167,
+        "longitud": -73.2167
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.2967,
+              7.0367
+            ],
+            [
+              -73.1367,
+              7.0367
+            ],
+            [
+              -73.1367,
+              7.1967
+            ],
+            [
+              -73.2967,
+              7.1967
+            ],
+            [
+              -73.2967,
+              7.0367
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "LOS SANTOS",
+        "codMunicipio": 68418,
+        "balanceCarbono": 147552.61786631105,
+        "clasificacion": "Emisor",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 178009.07982835275,
+        "capturaBosques": 30456.461962041703,
+        "IEC": 86.26781428630062,
+        "latitud": 6.7833,
+        "longitud": -73.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.17999999999999,
+              6.7033
+            ],
+            [
+              -73.02,
+              6.7033
+            ],
+            [
+              -73.02,
+              6.8633
+            ],
+            [
+              -73.17999999999999,
+              6.8633
+            ],
+            [
+              -73.17999999999999,
+              6.7033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "MACARAVITA",
+        "codMunicipio": 68425,
+        "balanceCarbono": -16207.55219531172,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 10051.611061195768,
+        "capturaBosques": 26259.163256507487,
+        "IEC": 50.0,
+        "latitud": 6.5,
+        "longitud": -72.5833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.66329999999999,
+              6.42
+            ],
+            [
+              -72.5033,
+              6.42
+            ],
+            [
+              -72.5033,
+              6.58
+            ],
+            [
+              -72.66329999999999,
+              6.58
+            ],
+            [
+              -72.66329999999999,
+              6.42
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "MALAGA",
+        "codMunicipio": 68432,
+        "balanceCarbono": 21107.532177327645,
+        "clasificacion": "Emisor",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 29656.98735731217,
+        "capturaBosques": 8549.455179984525,
+        "IEC": 60.31839340240307,
+        "latitud": 6.7,
+        "longitud": -72.7333
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.8133,
+              6.62
+            ],
+            [
+              -72.6533,
+              6.62
+            ],
+            [
+              -72.6533,
+              6.78
+            ],
+            [
+              -72.8133,
+              6.78
+            ],
+            [
+              -72.8133,
+              6.62
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "MATANZA",
+        "codMunicipio": 68444,
+        "balanceCarbono": -68356.02491711284,
+        "clasificacion": "Sumidero",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 21128.452759432774,
+        "capturaBosques": 89484.4776765456,
+        "IEC": 35.773479825009574,
+        "latitud": 7.3333,
+        "longitud": -73.0167
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.0967,
+              7.2533
+            ],
+            [
+              -72.9367,
+              7.2533
+            ],
+            [
+              -72.9367,
+              7.4133000000000004
+            ],
+            [
+              -73.0967,
+              7.4133000000000004
+            ],
+            [
+              -73.0967,
+              7.2533
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "MOGOTES",
+        "codMunicipio": 68464,
+        "balanceCarbono": -133274.33569944117,
+        "clasificacion": "Sumidero",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 25770.561250047496,
+        "capturaBosques": 159044.89694948867,
+        "IEC": 21.18647367250757,
+        "latitud": 6.4833,
+        "longitud": -72.9667
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.0467,
+              6.4033
+            ],
+            [
+              -72.8867,
+              6.4033
+            ],
+            [
+              -72.8867,
+              6.5633
+            ],
+            [
+              -73.0467,
+              6.5633
+            ],
+            [
+              -73.0467,
+              6.4033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "MOLAGAVITA",
+        "codMunicipio": 68468,
+        "balanceCarbono": -25520.95800727329,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 16190.095152004133,
+        "capturaBosques": 41711.05315927742,
+        "IEC": 47.389503335747854,
+        "latitud": 6.75,
+        "longitud": -72.8167
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.8967,
+              6.67
+            ],
+            [
+              -72.7367,
+              6.67
+            ],
+            [
+              -72.7367,
+              6.83
+            ],
+            [
+              -72.8967,
+              6.83
+            ],
+            [
+              -72.8967,
+              6.67
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "OCAMONTE",
+        "codMunicipio": 68498,
+        "balanceCarbono": -11631.23586107276,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 10626.15994350313,
+        "capturaBosques": 22257.395804575888,
+        "IEC": 51.28360173627908,
+        "latitud": 6.45,
+        "longitud": -73.1167
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.19669999999999,
+              6.37
+            ],
+            [
+              -73.0367,
+              6.37
+            ],
+            [
+              -73.0367,
+              6.53
+            ],
+            [
+              -73.19669999999999,
+              6.53
+            ],
+            [
+              -73.19669999999999,
+              6.37
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "OIBA",
+        "codMunicipio": 68500,
+        "balanceCarbono": -44479.087851939934,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 55788.64431245937,
+        "capturaBosques": 100267.7321643993,
+        "IEC": 42.13429811145897,
+        "latitud": 6.2667,
+        "longitud": -73.2833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.3633,
+              6.1867
+            ],
+            [
+              -73.2033,
+              6.1867
+            ],
+            [
+              -73.2033,
+              6.3467
+            ],
+            [
+              -73.3633,
+              6.3467
+            ],
+            [
+              -73.3633,
+              6.1867
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "ONZAGA",
+        "codMunicipio": 68502,
+        "balanceCarbono": -156737.23711825145,
+        "clasificacion": "Sumidero",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 12688.01238617454,
+        "capturaBosques": 169425.249504426,
+        "IEC": 17.12176500558041,
+        "latitud": 6.3333,
+        "longitud": -72.8333
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.91329999999999,
+              6.2533
+            ],
+            [
+              -72.7533,
+              6.2533
+            ],
+            [
+              -72.7533,
+              6.4133000000000004
+            ],
+            [
+              -72.91329999999999,
+              6.4133000000000004
+            ],
+            [
+              -72.91329999999999,
+              6.2533
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "PALMAR",
+        "codMunicipio": 68522,
+        "balanceCarbono": 1169.2494188749442,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 5556.75591508407,
+        "capturaBosques": 4387.5064962091255,
+        "IEC": 54.85966552769951,
+        "latitud": 6.4833,
+        "longitud": -73.4833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.5633,
+              6.4033
+            ],
+            [
+              -73.4033,
+              6.4033
+            ],
+            [
+              -73.4033,
+              6.5633
+            ],
+            [
+              -73.5633,
+              6.5633
+            ],
+            [
+              -73.5633,
+              6.4033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "PALMAS DEL SOCORRO",
+        "codMunicipio": 68524,
+        "balanceCarbono": 518.7847651543743,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 16957.95807831052,
+        "capturaBosques": 16439.173313156145,
+        "IEC": 54.67883844682808,
+        "latitud": 6.15,
+        "longitud": -73.3167
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.3967,
+              6.07
+            ],
+            [
+              -73.2367,
+              6.07
+            ],
+            [
+              -73.2367,
+              6.23
+            ],
+            [
+              -73.3967,
+              6.23
+            ],
+            [
+              -73.3967,
+              6.07
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "PARAMO",
+        "codMunicipio": 68533,
+        "balanceCarbono": -3930.649367929198,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 14087.469129559742,
+        "capturaBosques": 18018.11849748894,
+        "IEC": 53.43884285075979,
+        "latitud": 6.4333,
+        "longitud": -73.1833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.2633,
+              6.3533
+            ],
+            [
+              -73.1033,
+              6.3533
+            ],
+            [
+              -73.1033,
+              6.5133
+            ],
+            [
+              -73.2633,
+              6.5133
+            ],
+            [
+              -73.2633,
+              6.3533
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "PIEDECUESTA",
+        "codMunicipio": 68547,
+        "balanceCarbono": -24286.83738664024,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 102292.33586151536,
+        "capturaBosques": 126579.1732481556,
+        "IEC": 47.73491098412898,
+        "latitud": 6.9833,
+        "longitud": -73.05
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.13,
+              6.9033
+            ],
+            [
+              -72.97,
+              6.9033
+            ],
+            [
+              -72.97,
+              7.0633
+            ],
+            [
+              -73.13,
+              7.0633
+            ],
+            [
+              -73.13,
+              6.9033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "PINCHOTE",
+        "codMunicipio": 68549,
+        "balanceCarbono": 62206.19046615537,
+        "clasificacion": "Emisor",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 77070.8274577025,
+        "capturaBosques": 14864.636991547126,
+        "IEC": 70.6813485776709,
+        "latitud": 6.5333,
+        "longitud": -73.1833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.2633,
+              6.4533
+            ],
+            [
+              -73.1033,
+              6.4533
+            ],
+            [
+              -73.1033,
+              6.6133
+            ],
+            [
+              -73.2633,
+              6.6133
+            ],
+            [
+              -73.2633,
+              6.4533
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "PUENTE NACIONAL",
+        "codMunicipio": 68572,
+        "balanceCarbono": -38042.27128607362,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 40048.36226053194,
+        "capturaBosques": 78090.63354660556,
+        "IEC": 43.90474342912592,
+        "latitud": 5.8833,
+        "longitud": -73.6833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.7633,
+              5.8033
+            ],
+            [
+              -73.6033,
+              5.8033
+            ],
+            [
+              -73.6033,
+              5.9633
+            ],
+            [
+              -73.7633,
+              5.9633
+            ],
+            [
+              -73.7633,
+              5.8033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "PUERTO PARRA",
+        "codMunicipio": 68573,
+        "balanceCarbono": 108697.19009537029,
+        "clasificacion": "Emisor",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 262973.44912608725,
+        "capturaBosques": 154276.25903071696,
+        "IEC": 80.24502088684142,
+        "latitud": 7.1833,
+        "longitud": -73.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.98,
+              7.1033
+            ],
+            [
+              -73.82000000000001,
+              7.1033
+            ],
+            [
+              -73.82000000000001,
+              7.2633
+            ],
+            [
+              -73.98,
+              7.2633
+            ],
+            [
+              -73.98,
+              7.1033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "PUERTO WILCHES",
+        "codMunicipio": 68575,
+        "balanceCarbono": 252009.3849514484,
+        "clasificacion": "Emisor",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 372125.50935867545,
+        "capturaBosques": 120116.12440722703,
+        "IEC": 95.30205616099516,
+        "latitud": 7.35,
+        "longitud": -73.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.98,
+              7.27
+            ],
+            [
+              -73.82000000000001,
+              7.27
+            ],
+            [
+              -73.82000000000001,
+              7.43
+            ],
+            [
+              -73.98,
+              7.43
+            ],
+            [
+              -73.98,
+              7.27
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "RIONEGRO",
+        "codMunicipio": 68615,
+        "balanceCarbono": 53254.72796238767,
+        "clasificacion": "Emisor",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 302097.9451377132,
+        "capturaBosques": 248843.21717532555,
+        "IEC": 68.55733487908553,
+        "latitud": 7.3833,
+        "longitud": -73.15
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.23,
+              7.3033
+            ],
+            [
+              -73.07000000000001,
+              7.3033
+            ],
+            [
+              -73.07000000000001,
+              7.4633
+            ],
+            [
+              -73.23,
+              7.4633
+            ],
+            [
+              -73.23,
+              7.3033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "SABANA DE TORRES",
+        "codMunicipio": 68655,
+        "balanceCarbono": 212583.68890744945,
+        "clasificacion": "Emisor",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 455560.468133777,
+        "capturaBosques": 242976.7792263276,
+        "IEC": 92.87398818398448,
+        "latitud": 7.3833,
+        "longitud": -73.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.58,
+              7.3033
+            ],
+            [
+              -73.42,
+              7.3033
+            ],
+            [
+              -73.42,
+              7.4633
+            ],
+            [
+              -73.58,
+              7.4633
+            ],
+            [
+              -73.58,
+              7.3033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "SAN ANDRES",
+        "codMunicipio": 68669,
+        "balanceCarbono": -41653.75681035271,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 33045.06573847889,
+        "capturaBosques": 74698.8225488316,
+        "IEC": 42.90919510926755,
+        "latitud": 6.3833,
+        "longitud": -72.8333
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.91329999999999,
+              6.3033
+            ],
+            [
+              -72.7533,
+              6.3033
+            ],
+            [
+              -72.7533,
+              6.4633
+            ],
+            [
+              -72.91329999999999,
+              6.4633
+            ],
+            [
+              -72.91329999999999,
+              6.3033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "SAN BENITO",
+        "codMunicipio": 68673,
+        "balanceCarbono": -6508.225416664956,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 7369.298671270479,
+        "capturaBosques": 13877.524087935435,
+        "IEC": 52.7184591418982,
+        "latitud": 6.0667,
+        "longitud": -73.2333
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.3133,
+              5.9867
+            ],
+            [
+              -73.1533,
+              5.9867
+            ],
+            [
+              -73.1533,
+              6.1467
+            ],
+            [
+              -73.3133,
+              6.1467
+            ],
+            [
+              -73.3133,
+              5.9867
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "SAN GIL",
+        "codMunicipio": 68679,
+        "balanceCarbono": 19378.78020098259,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 49552.20849326591,
+        "capturaBosques": 30173.428292283315,
+        "IEC": 59.85313098919439,
+        "latitud": 6.55,
+        "longitud": -73.1333
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.2133,
+              6.47
+            ],
+            [
+              -73.05330000000001,
+              6.47
+            ],
+            [
+              -73.05330000000001,
+              6.63
+            ],
+            [
+              -73.2133,
+              6.63
+            ],
+            [
+              -73.2133,
+              6.47
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "SAN JOAQUIN",
+        "codMunicipio": 68682,
+        "balanceCarbono": -42977.16205847391,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 6335.411785702897,
+        "capturaBosques": 49312.5738441768,
+        "IEC": 42.545770782003686,
+        "latitud": 6.45,
+        "longitud": -72.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.88,
+              6.37
+            ],
+            [
+              -72.72,
+              6.37
+            ],
+            [
+              -72.72,
+              6.53
+            ],
+            [
+              -72.88,
+              6.53
+            ],
+            [
+              -72.88,
+              6.37
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "SAN JOSE DE MIRANDA",
+        "codMunicipio": 68684,
+        "balanceCarbono": -1644.66056186308,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 9721.524800021163,
+        "capturaBosques": 11366.185361884243,
+        "IEC": 54.07654494564055,
+        "latitud": 6.6167,
+        "longitud": -72.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.78,
+              6.5367
+            ],
+            [
+              -72.62,
+              6.5367
+            ],
+            [
+              -72.62,
+              6.6967
+            ],
+            [
+              -72.78,
+              6.6967
+            ],
+            [
+              -72.78,
+              6.5367
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "SAN MIGUEL",
+        "codMunicipio": 68686,
+        "balanceCarbono": -14702.428337503006,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 9572.050497050594,
+        "capturaBosques": 24274.4788345536,
+        "IEC": 50.42225189653837,
+        "latitud": 6.3333,
+        "longitud": -72.6667
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.7467,
+              6.2533
+            ],
+            [
+              -72.58670000000001,
+              6.2533
+            ],
+            [
+              -72.58670000000001,
+              6.4133000000000004
+            ],
+            [
+              -72.7467,
+              6.4133000000000004
+            ],
+            [
+              -72.7467,
+              6.2533
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "SAN VICENTE DE CHUCURI",
+        "codMunicipio": 68689,
+        "balanceCarbono": -27568.752176157723,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 321396.4121992542,
+        "capturaBosques": 348965.1643754119,
+        "IEC": 46.81693017021279,
+        "latitud": 6.8833,
+        "longitud": -73.4167
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.4967,
+              6.8033
+            ],
+            [
+              -73.33670000000001,
+              6.8033
+            ],
+            [
+              -73.33670000000001,
+              6.9633
+            ],
+            [
+              -73.4967,
+              6.9633
+            ],
+            [
+              -73.4967,
+              6.8033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "SANTA BARBARA",
+        "codMunicipio": 68705,
+        "balanceCarbono": -63146.67221776878,
+        "clasificacion": "Sumidero",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 4624.708323098982,
+        "capturaBosques": 67771.38054086776,
+        "IEC": 37.12751934987768,
+        "latitud": 6.0,
+        "longitud": -73.5167
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.5967,
+              5.92
+            ],
+            [
+              -73.4367,
+              5.92
+            ],
+            [
+              -73.4367,
+              6.08
+            ],
+            [
+              -73.5967,
+              6.08
+            ],
+            [
+              -73.5967,
+              5.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "SANTA HELENA DEL OPON",
+        "codMunicipio": 68720,
+        "balanceCarbono": -75939.42462440266,
+        "clasificacion": "Sumidero",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 73347.752272779,
+        "capturaBosques": 149287.17689718166,
+        "IEC": 33.84273901502567,
+        "latitud": 6.2167,
+        "longitud": -73.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.78,
+              6.1367
+            ],
+            [
+              -73.62,
+              6.1367
+            ],
+            [
+              -73.62,
+              6.2967
+            ],
+            [
+              -73.78,
+              6.2967
+            ],
+            [
+              -73.78,
+              6.1367
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "SIMACOTA",
+        "codMunicipio": 68745,
+        "balanceCarbono": 51997.41498916474,
+        "clasificacion": "Emisor",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 317977.2032663501,
+        "capturaBosques": 265979.78827718535,
+        "IEC": 68.25239251450351,
+        "latitud": 6.4333,
+        "longitud": -73.35
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.42999999999999,
+              6.3533
+            ],
+            [
+              -73.27,
+              6.3533
+            ],
+            [
+              -73.27,
+              6.5133
+            ],
+            [
+              -73.42999999999999,
+              6.5133
+            ],
+            [
+              -73.42999999999999,
+              6.3533
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "SOCORRO",
+        "codMunicipio": 68755,
+        "balanceCarbono": -5387.704613226073,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 34034.1995040468,
+        "capturaBosques": 39421.90411727288,
+        "IEC": 53.03178034674508,
+        "latitud": 6.4667,
+        "longitud": -73.2667
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.3467,
+              6.3867
+            ],
+            [
+              -73.1867,
+              6.3867
+            ],
+            [
+              -73.1867,
+              6.5467
+            ],
+            [
+              -73.3467,
+              6.5467
+            ],
+            [
+              -73.3467,
+              6.3867
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "SUAITA",
+        "codMunicipio": 68770,
+        "balanceCarbono": -68577.92210726577,
+        "clasificacion": "Sumidero",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 40768.84328352185,
+        "capturaBosques": 109346.7653907876,
+        "IEC": 35.71628680645559,
+        "latitud": 6.0833,
+        "longitud": -73.45
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.53,
+              6.0033
+            ],
+            [
+              -73.37,
+              6.0033
+            ],
+            [
+              -73.37,
+              6.1633000000000004
+            ],
+            [
+              -73.53,
+              6.1633000000000004
+            ],
+            [
+              -73.53,
+              6.0033
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "SUCRE",
+        "codMunicipio": 68773,
+        "balanceCarbono": -157239.43721170057,
+        "clasificacion": "Sumidero",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 152303.98934175624,
+        "capturaBosques": 309543.4265534568,
+        "IEC": 17.041941575193498,
+        "latitud": 6.05,
+        "longitud": -73.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.58,
+              5.97
+            ],
+            [
+              -73.42,
+              5.97
+            ],
+            [
+              -73.42,
+              6.13
+            ],
+            [
+              -73.58,
+              6.13
+            ],
+            [
+              -73.58,
+              5.97
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "SURATA",
+        "codMunicipio": 68780,
+        "balanceCarbono": -102593.99874751936,
+        "clasificacion": "Sumidero",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 16277.477920882033,
+        "capturaBosques": 118871.4766684014,
+        "IEC": 27.499464620664348,
+        "latitud": 7.3667,
+        "longitud": -72.9833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.0633,
+              7.2867
+            ],
+            [
+              -72.9033,
+              7.2867
+            ],
+            [
+              -72.9033,
+              7.4467
+            ],
+            [
+              -73.0633,
+              7.4467
+            ],
+            [
+              -73.0633,
+              7.2867
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "TONA",
+        "codMunicipio": 68820,
+        "balanceCarbono": -37302.14090273745,
+        "clasificacion": "Equilibrio",
+        "perfil": "Agr\u00edcola-Ganadero",
+        "emisionesTotales": 19924.5025202334,
+        "capturaBosques": 57226.64342297085,
+        "IEC": 44.10940340669766,
+        "latitud": 7.2167,
+        "longitud": -72.9667
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.0467,
+              7.1367
+            ],
+            [
+              -72.8867,
+              7.1367
+            ],
+            [
+              -72.8867,
+              7.2967
+            ],
+            [
+              -73.0467,
+              7.2967
+            ],
+            [
+              -73.0467,
+              7.1367
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "VALLE DE SAN JOSE",
+        "codMunicipio": 68855,
+        "balanceCarbono": -10815.195721974182,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 15473.52874177041,
+        "capturaBosques": 26288.72446374459,
+        "IEC": 51.51236211966411,
+        "latitud": 6.4333,
+        "longitud": -73.15
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.23,
+              6.3533
+            ],
+            [
+              -73.07000000000001,
+              6.3533
+            ],
+            [
+              -73.07000000000001,
+              6.5133
+            ],
+            [
+              -73.23,
+              6.5133
+            ],
+            [
+              -73.23,
+              6.3533
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "VELEZ",
+        "codMunicipio": 68861,
+        "balanceCarbono": -44663.775436322176,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 93130.03992302272,
+        "capturaBosques": 137793.8153593449,
+        "IEC": 42.08377461174197,
+        "latitud": 6.0167,
+        "longitud": -73.6833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.7633,
+              5.9367
+            ],
+            [
+              -73.6033,
+              5.9367
+            ],
+            [
+              -73.6033,
+              6.0967
+            ],
+            [
+              -73.7633,
+              6.0967
+            ],
+            [
+              -73.7633,
+              5.9367
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "VETAS",
+        "codMunicipio": 68867,
+        "balanceCarbono": 14380.884743091625,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 26561.881746574345,
+        "capturaBosques": 12180.99700348272,
+        "IEC": 58.498292176758696,
+        "latitud": 7.3,
+        "longitud": -72.8833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.9633,
+              7.22
+            ],
+            [
+              -72.80330000000001,
+              7.22
+            ],
+            [
+              -72.80330000000001,
+              7.38
+            ],
+            [
+              -72.9633,
+              7.38
+            ],
+            [
+              -72.9633,
+              7.22
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "VILLANUEVA",
+        "codMunicipio": 68872,
+        "balanceCarbono": 20146.54695142502,
+        "clasificacion": "Emisor",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 28958.673658771324,
+        "capturaBosques": 8812.126707346304,
+        "IEC": 60.05998613333706,
+        "latitud": 6.6667,
+        "longitud": -73.1833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.2633,
+              6.5866999999999996
+            ],
+            [
+              -73.1033,
+              6.5866999999999996
+            ],
+            [
+              -73.1033,
+              6.7467
+            ],
+            [
+              -73.2633,
+              6.7467
+            ],
+            [
+              -73.2633,
+              6.5866999999999996
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "municipio": "ZAPATOCA",
+        "codMunicipio": 68895,
+        "balanceCarbono": -49131.75464320146,
+        "clasificacion": "Equilibrio",
+        "perfil": "Mixto-Transici\u00f3n",
+        "emisionesTotales": 35742.9837128638,
+        "capturaBosques": 84874.73835606525,
+        "IEC": 40.86679086192554,
+        "latitud": 6.8167,
+        "longitud": -73.2667
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.3467,
+              6.7367
+            ],
+            [
+              -73.1867,
+              6.7367
+            ],
+            [
+              -73.1867,
+              6.8967
+            ],
+            [
+              -73.3467,
+              6.8967
+            ],
+            [
+              -73.3467,
+              6.7367
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
