@@ -15,4 +15,5 @@ func main() {
 	punterosGo()
 	stringersGo()
 	interfacesEnGo()
+	concurrenciaEnGo()
 }
