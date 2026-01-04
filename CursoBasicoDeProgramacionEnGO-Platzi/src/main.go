@@ -6,5 +6,6 @@ func main() {
 	mathGo()
 	buclesFor()
 	operadoresLogicos()
-
+	switchEnGO()
+	keywordsEnGo()
 }
