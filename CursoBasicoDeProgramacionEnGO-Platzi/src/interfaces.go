@@ -43,4 +43,11 @@ func interfacesEnGo() {
 	// Usando una lista de interfaces
 	myInterfaces := []interface{}{"Hola", 12, 4.90}
 	fmt.Println(myInterfaces...)
+
+	// Usando una lista de figuras 2D
+	figuras := []figura2D{myCuadrado, myRectangulo}
+	for _, figura := range figuras {
+		calcularArea(figura)
+	}
+
 }
