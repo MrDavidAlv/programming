@@ -8,4 +8,7 @@ func main() {
 	operadoresLogicos()
 	switchEnGO()
 	keywordsEnGo()
+	arrayEnGo()
+	mapsEnGo()
+	structsGo()
 }
