@@ -12,4 +12,5 @@ func main() {
 	mapsEnGo()
 	structsGo()
 	modificadoresAcceso()
+	punterosGo()
 }
