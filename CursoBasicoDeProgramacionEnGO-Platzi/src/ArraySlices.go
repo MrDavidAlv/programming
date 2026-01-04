@@ -46,6 +46,16 @@ func ejemploSlicesEnGo() {
 	for index := range slice2 {
 		fmt.Println("Índice:", index)
 	}
+
+	// recorrido del slice con valor
+	for index, value := range slice2 {
+		fmt.Println("Índice:", index, "Valor:", value)
+	}
+
+	// recorrido del slice con valor y índice ignorado
+	for _, value := range slice2 {
+		fmt.Println("Valor:", value)
+	}
 }
 
 func esPalindromo(texto string) {
