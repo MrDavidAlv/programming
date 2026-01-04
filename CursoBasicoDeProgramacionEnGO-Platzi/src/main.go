@@ -14,4 +14,5 @@ func main() {
 	modificadoresAcceso()
 	punterosGo()
 	stringersGo()
+	interfacesEnGo()
 }
