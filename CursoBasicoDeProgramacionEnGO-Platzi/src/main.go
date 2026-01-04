@@ -57,5 +57,7 @@ func main() {
 	concurrenciaEnGo()
 	fmt.Println("===== canales =====")
 	channelsGo()
+	fmt.Println("===== canales avanzados =====")
+	channelsAvanzadosgo()
 
 }
