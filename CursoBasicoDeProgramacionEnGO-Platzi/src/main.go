@@ -59,5 +59,7 @@ func main() {
 	channelsGo()
 	fmt.Println("===== canales avanzados =====")
 	channelsAvanzadosgo()
+	fmt.Println("===== go modules =====")
+	moduloEcho()
 
 }
