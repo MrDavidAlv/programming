@@ -13,4 +13,5 @@ func main() {
 	structsGo()
 	modificadoresAcceso()
 	punterosGo()
+	stringersGo()
 }
